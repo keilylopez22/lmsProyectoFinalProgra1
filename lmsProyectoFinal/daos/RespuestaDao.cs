@@ -35,7 +35,7 @@ namespace lmsProyectoFinal.daos
             Respuesta respuesta = null;
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                string query = "SELECT * FROM respuesta WHERE Id = @Id";
+                string query = "SELECT * FROM respuestas WHERE Id = @Id";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
                 connection.Open();
@@ -59,7 +59,7 @@ namespace lmsProyectoFinal.daos
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                string query = "UPDATE respuesta SET Contenido = @Contenido WHERE id=@Id;";
+                string query = "UPDATE respuestas SET Contenido = @Contenido WHERE id=@Id;";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Contenido", respuesta.Contenido);
                 command.Parameters.AddWithValue("@Id", respuesta.Id);
@@ -72,7 +72,7 @@ namespace lmsProyectoFinal.daos
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                string query = "DELETE FROM respuesta WHERE Id = @Id";
+                string query = "DELETE FROM respuestas WHERE Id = @Id";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
                 connection.Open();
@@ -87,7 +87,7 @@ namespace lmsProyectoFinal.daos
             {
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    string query = "SELECT * FROM respuesta where foro_id = @ForoId";
+                    string query = "SELECT * FROM respuestas where foro_id = @ForoId";
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@ForoId", foroId);
                     connection.Open();
