@@ -116,12 +116,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(54, 252);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(868, 79);
             this.textBox1.TabIndex = 34;
             // 
@@ -146,6 +144,7 @@
             this.btnResponder.TabIndex = 35;
             this.btnResponder.Text = "Responder";
             this.btnResponder.UseVisualStyleBackColor = true;
+            this.btnResponder.Click += new System.EventHandler(this.btnResponder_Click);
             // 
             // FRMRespuestas
             // 
