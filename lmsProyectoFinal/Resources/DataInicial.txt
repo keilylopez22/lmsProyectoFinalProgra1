@@ -41,3 +41,22 @@ INSERT INTO entregas (actividad_id,estudiante_id,fecha_entrega,archivo_url,calif
 	 (1,2,'2023-03-02','http://example.com/entrega2',87.00),
 	 (2,3,'2023-03-02','http://example.com/entrega3',92.00);
 
+INSERT INTO Foro (Curso_ID, Titulo, Descripcion) 
+	VALUES (1, 'Problemas de Álgebra', 'Discusión sobre problemas de álgebra y soluciones');
+INSERT INTO Foro (Curso_ID, Titulo, Descripcion) 
+	VALUES (1, 'Geometría Euclidiana', 'Preguntas y respuestas sobre geometría euclidiana');
+INSERT INTO Foro (Curso_ID, Titulo, Descripcion) 
+	VALUES (2, 'Revolución Industrial', 'Debate sobre los impactos de la Revolución Industrial');
+INSERT INTO Foro (Curso_ID, Titulo, Descripcion) 
+	VALUES (2, 'Guerra Fría', 'Discusión sobre los eventos y consecuencias de la Guerra Fría');
+
+
+INSERT INTO Respuestas (Foro_ID, Contenido, Autor) 
+	VALUES (1, 'La mejor manera de resolver ecuaciones cuadráticas es usando la fórmula general.', 'María López');
+INSERT INTO Respuestas (Foro_ID, Contenido, Autor) 
+	VALUES (1, 'Para los sistemas de ecuaciones, recomiendo el método de eliminación.', 'Carlos García');
+INSERT INTO Respuestas (Foro_ID, Contenido, Autor) 
+	VALUES (2, 'El teorema de Pitágoras es fundamental en geometría.', 'Juan Pérez');
+INSERT INTO Respuestas (Foro_ID, Contenido, Autor) 
+	VALUES (2, 'Para entender mejor los postulados de Euclides, recomiendo leer "Los Elementos".', 'Ana Gómez');
+

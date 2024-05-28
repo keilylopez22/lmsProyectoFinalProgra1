@@ -106,4 +106,24 @@ namespace lmsProyectoFinal
         public string Curso { get; set; }
     }
 
+    public class Foro
+     {
+        public int Id { get; set; }
+        public int CursoId { get; set; }
+        public string Titulo { get; set; }
+        public string Descripcion { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        
+     }
+
+    public class Respuesta
+    {
+        public int Id { get; set; }
+        public int ForoId { get; set; }
+        public string Contenido { get; set; }
+        public string Autor { get; set; }
+        public DateTime FechaCreacion { get; set; }
+    }
+
+
 }

@@ -99,3 +99,23 @@ CREATE TABLE `entregas` (
   CONSTRAINT `entregas_ibfk_1` FOREIGN KEY (`actividad_id`) REFERENCES `actividades` (`id`),
   CONSTRAINT `entregas_ibfk_2` FOREIGN KEY (`estudiante_id`) REFERENCES `estudiantes` (`id`)
 );
+
+-- Crear la tabla Foro relacionada con Cursos
+CREATE TABLE Foro (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    Curso_ID INT,
+    Titulo VARCHAR(255) NOT NULL,
+    Descripcion TEXT,
+    Fecha_Creacion DATETIME DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT FK_Cursos_Foro FOREIGN KEY (Curso_ID) REFERENCES Cursos(id)
+);
+
+-- Crear la tabla Respuestas relacionada con Foro
+CREATE TABLE Respuestas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    Foro_ID INT,
+    Contenido TEXT NOT NULL,
+    Autor VARCHAR(255),
+    Fecha_Creacion DATETIME DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT FK_Foro_Respuestas FOREIGN KEY (Foro_ID) REFERENCES Foro(id)
+);
