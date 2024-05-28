@@ -33,6 +33,7 @@
             this.btnCalificaciones = new System.Windows.Forms.Button();
             this.btnInformes = new System.Windows.Forms.Button();
             this.pnlSubMenuCursos = new System.Windows.Forms.Panel();
+            this.btnForos = new System.Windows.Forms.Button();
             this.btnActividades = new System.Windows.Forms.Button();
             this.btnListarCursos = new System.Windows.Forms.Button();
             this.btnCursos = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.btnForos = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.pnlInformes.SuspendLayout();
             this.pnlSubMenuCursos.SuspendLayout();
@@ -132,6 +132,22 @@
             this.pnlSubMenuCursos.Name = "pnlSubMenuCursos";
             this.pnlSubMenuCursos.Size = new System.Drawing.Size(265, 100);
             this.pnlSubMenuCursos.TabIndex = 9;
+            // 
+            // btnForos
+            // 
+            this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnForos.FlatAppearance.BorderSize = 0;
+            this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForos.Location = new System.Drawing.Point(0, 66);
+            this.btnForos.Name = "btnForos";
+            this.btnForos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnForos.Size = new System.Drawing.Size(265, 33);
+            this.btnForos.TabIndex = 3;
+            this.btnForos.Text = "Foros";
+            this.btnForos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnForos.UseVisualStyleBackColor = true;
+            this.btnForos.Click += new System.EventHandler(this.btnForos_Click);
             // 
             // btnActividades
             // 
@@ -366,21 +382,6 @@
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Size = new System.Drawing.Size(928, 832);
             this.pnlContenedor.TabIndex = 1;
-            // 
-            // btnForos
-            // 
-            this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnForos.FlatAppearance.BorderSize = 0;
-            this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForos.Location = new System.Drawing.Point(0, 66);
-            this.btnForos.Name = "btnForos";
-            this.btnForos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnForos.Size = new System.Drawing.Size(265, 33);
-            this.btnForos.TabIndex = 3;
-            this.btnForos.Text = "Foros";
-            this.btnForos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnForos.UseVisualStyleBackColor = true;
             // 
             // FRMMenuAdmin
             // 

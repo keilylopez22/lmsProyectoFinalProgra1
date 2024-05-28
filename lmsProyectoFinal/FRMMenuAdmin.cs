@@ -129,5 +129,11 @@ namespace lmsProyectoFinal
             FRMActividades form = new FRMActividades();
             mostrarForm(form);
         }
+
+        private void btnForos_Click(object sender, EventArgs e)
+        {
+            FRMForos form = new FRMForos();
+            mostrarForm(form);
+        }
     }
 }
