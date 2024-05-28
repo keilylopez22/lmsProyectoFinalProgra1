@@ -235,5 +235,9 @@
   <ItemGroup>
     <None Include="Resources\K-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\DataInicial.txt" />
+    <Content Include="Resources\ScriptsBD.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
