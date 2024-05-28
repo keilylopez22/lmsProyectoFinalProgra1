@@ -30,7 +30,7 @@ namespace lmsProyectoFinal.daos
             }
         }
 
-        public Respuesta GetEstudiante(int id)
+        public Respuesta GetRespuesta(int id)
         {
             Respuesta respuesta = null;
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -80,7 +80,7 @@ namespace lmsProyectoFinal.daos
             }
         }
 
-        public List<Respuesta> GetAllForos(int foroId)
+        public List<Respuesta> GetAllRespuestas(int foroId)
         {
             List<Respuesta> respuestas = new List<Respuesta>();
             if (foroId > 0)
