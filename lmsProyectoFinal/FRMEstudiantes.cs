@@ -13,17 +13,35 @@ namespace lmsProyectoFinal
     public partial class FRMEstudiantes : Form
     {
         EstudianteDAO estudianteDAO = new EstudianteDAO();
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
         bool esNuevo = true;
         Estudiante estudianteSeleccionado;
         public FRMEstudiantes()
         {
             InitializeComponent();
+            listarUsuarios();
             listarEstudiantes();
+        }
+
+        private void listarUsuarios()
+        {
+            List<Usuario> lista = new List<Usuario>();
+            lista.Add(new Usuario
+            {
+                Id = -1,
+                Nombre = "--Seleccionar--"
+            });
+
+            lista.AddRange(usuarioDAO.GetAllUsuarios());
+            cmbUsuario.DataSource = lista;
+            cmbUsuario.DisplayMember = "Nombre";
+            cmbUsuario.ValueMember = "Id";
         }
 
         private void listarEstudiantes()
         {
             dgvEstudiantes.DataSource= estudianteDAO.GetAllEstudiantes();
+            dgvEstudiantes.Columns["UsuarioId"].Visible = false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -66,12 +84,12 @@ namespace lmsProyectoFinal
                     Id = (int)row.Cells["Id"].Value,
                     Nombre = (string)row.Cells["Nombre"].Value,
                     Direccion = (string)row.Cells["Direccion"].Value,
-                    Sexo = cmbSexo.SelectedItem.ToString(),
-                    UsuarioId = (int)cmbUsuario.SelectedValue
+                    Sexo = (string)row.Cells["Sexo"].Value,
+                    UsuarioId = (int)row.Cells["UsuarioId"].Value
                 };
                 txtNombre.Text = estudianteSeleccionado.Nombre;
                 txtDireccion.Text = estudianteSeleccionado.Direccion;
-                cmbSexo.SelectedValue= estudianteSeleccionado.Sexo;
+                cmbSexo.SelectedItem= estudianteSeleccionado.Sexo;
                 cmbUsuario.SelectedValue = estudianteSeleccionado.UsuarioId;
                 esNuevo = false;
             }

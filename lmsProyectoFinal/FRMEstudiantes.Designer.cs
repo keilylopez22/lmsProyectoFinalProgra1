@@ -75,10 +75,6 @@
             // cmbUsuario
             // 
             this.cmbUsuario.FormattingEnabled = true;
-            this.cmbUsuario.Items.AddRange(new object[] {
-            "administrador",
-            "profesor",
-            "estudiante"});
             this.cmbUsuario.Location = new System.Drawing.Point(71, 107);
             this.cmbUsuario.Name = "cmbUsuario";
             this.cmbUsuario.Size = new System.Drawing.Size(366, 24);
