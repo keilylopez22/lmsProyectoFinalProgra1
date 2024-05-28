@@ -10,6 +10,7 @@ namespace lmsProyectoFinal
     using System;
     using System.Collections.Generic;
     using System.Data.SqlClient;
+    using System.Runtime.CompilerServices;
 
     public class UsuarioDAO
     {
@@ -59,6 +60,7 @@ namespace lmsProyectoFinal
                     };
                 }
             }
+            Sesion.getInstance().Usuario = usuario;
             return usuario;
         }
 
@@ -116,4 +118,19 @@ namespace lmsProyectoFinal
         }
     }
 
+    public class Sesion
+    {
+        private static Sesion sesion = null;
+        public Usuario Usuario { get; set; }
+        private Sesion() { }
+
+        public static Sesion getInstance()
+        {
+            if (sesion== null)
+            {
+                sesion = new Sesion();
+            }
+            return sesion;
+        }
+    }
 }
