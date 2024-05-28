@@ -104,6 +104,7 @@
     <Compile Include="daos\EntregaDAO.cs" />
     <Compile Include="daos\EstudianteDAO.cs" />
     <Compile Include="daos\ForoDao.cs" />
+    <Compile Include="daos\RespuestaDao.cs" />
     <Compile Include="FRMActividades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +149,12 @@
     <Compile Include="FRMEstudiantes.Designer.cs">
       <DependentUpon>FRMEstudiantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMForos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMForos.Designer.cs">
+      <DependentUpon>FRMForos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMMenuUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +172,12 @@
     </Compile>
     <Compile Include="FRMProfesores.Designer.cs">
       <DependentUpon>FRMProfesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMRespuestas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRespuestas.Designer.cs">
+      <DependentUpon>FRMRespuestas.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMUsuarios.cs">
       <SubType>Form</SubType>
@@ -197,6 +210,9 @@
     <EmbeddedResource Include="FRMEstudiantes.resx">
       <DependentUpon>FRMEstudiantes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMForos.resx">
+      <DependentUpon>FRMForos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMMenuUsuarios.resx">
       <DependentUpon>FRMMenuUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMProfesores.resx">
       <DependentUpon>FRMProfesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRespuestas.resx">
+      <DependentUpon>FRMRespuestas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMUsuarios.resx">
       <DependentUpon>FRMUsuarios.cs</DependentUpon>
