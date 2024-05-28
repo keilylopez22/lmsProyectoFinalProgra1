@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace lmsProyectoFinal.daos
 {
-    internal class ForoDao
+    public class ForoDao
     {
         private string connectionString = Constantes.connectionString;
 
@@ -32,7 +32,7 @@ namespace lmsProyectoFinal.daos
             }
         }
 
-        public Foro GetEstudiante(int id)
+        public Foro GetForo(int id)
         {
             Foro foro = null;
             using (MySqlConnection connection = new MySqlConnection(connectionString))
