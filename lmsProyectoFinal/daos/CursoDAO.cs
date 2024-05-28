@@ -23,7 +23,7 @@ namespace lmsProyectoFinal
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                string query = "INSERT INTO Cursos (Nombre, Descripcion, FechaInicio, FechaFin) VALUES (@Nombre, @Descripcion, @FechaInicio, @FechaFin)";
+                string query = "INSERT INTO Cursos (Nombre, Descripcion, Fecha_Inicio, Fecha_Fin) VALUES (@Nombre, @Descripcion, @FechaInicio, @FechaFin)";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Nombre", curso.Nombre);
                 command.Parameters.AddWithValue("@Descripcion", curso.Descripcion);
@@ -63,7 +63,7 @@ namespace lmsProyectoFinal
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                string query = "UPDATE Cursos SET Nombre = @Nombre, Descripcion = @Descripcion, FechaInicio = @FechaInicio, FechaFin = @FechaFin WHERE Id = @Id";
+                string query = "UPDATE Cursos SET Nombre = @Nombre, Descripcion = @Descripcion, Fecha_Inicio = @FechaInicio, Fecha_Fin = @FechaFin WHERE Id = @Id";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Nombre", curso.Nombre);
                 command.Parameters.AddWithValue("@Descripcion", curso.Descripcion);
