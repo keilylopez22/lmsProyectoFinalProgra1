@@ -116,15 +116,34 @@ namespace lmsProyectoFinal
             return profesores;
         }
 
-        public List<AsignacionCursoProfesor> getAllAsignaciones()
+        public List<AsignacionCursoProfesor> getAllAsignaciones(int cursoId, int profesorId)
         {
             List<AsignacionCursoProfesor> asignaciones = new List<AsignacionCursoProfesor>();
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 string query = "select p.nombre as profesor , c.nombre as curso, a.id, a.curso_id , a.profesor_id  "
                     +" from asignacioncursosprofesores a join profesores p on p.id = a.profesor_id " +
-                    " join cursos c ON c.id  = a.curso_id ";
+                    " join cursos c ON c.id  = a.curso_id WHERE 1=1 ";
+
+                if (cursoId > 0)
+                {
+                    query += " and a.curso_id = @CursoId";
+                }
+
+                if (profesorId > 0)
+                {
+                    query += " and a.profesor_id = @ProfesorId";
+                }
                 MySqlCommand command = new MySqlCommand(query, connection);
+                if (cursoId > 0)
+                {
+                    command.Parameters.AddWithValue("@CursoId", cursoId);
+                }
+
+                if (profesorId > 0)
+                {
+                    command.Parameters.AddWithValue("@ProfesorId", profesorId);
+                }
                 connection.Open();
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
@@ -142,6 +161,31 @@ namespace lmsProyectoFinal
             }
             return asignaciones;
         }
+
+        public void AsignarCurso(AsignacionCursoProfesor asignacion)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                string query = "INSERT INTO asignacioncursosprofesores (curso_id, profesor_id) VALUES (@CursoId, @ProfesorId)";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@CursoId", asignacion.CursoId);
+                command.Parameters.AddWithValue("@ProfesorId", asignacion.ProfesorId);
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+        public void DeleteAsignacion(int id)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                string query = "DELETE FROM asignacioncursosprofesores WHERE Id = @Id";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Id", id);
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
     }
 
 }
