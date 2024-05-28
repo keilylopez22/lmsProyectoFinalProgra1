@@ -63,14 +63,20 @@ namespace lmsProyectoFinal
                 Nombre = txtNombre.Text,
                 Direccion = txtDireccion.Text,
                 Sexo = cmbSexo.SelectedItem.ToString(),
-                UsuarioId =(int) cmbSexo.SelectedValue
+                UsuarioId = cmbUsuario.SelectedValue != null ? (int)cmbUsuario.SelectedValue : 0
             };
-            estudianteDAO.UpdateEstudiante(estudiante);
+            estudianteDAO.AddEstudiante(estudiante);
             listarEstudiantes();
         }
 
         private void actualizar()
         {
+            estudianteSeleccionado.Nombre = txtNombre.Text;
+            estudianteSeleccionado.Direccion= txtDireccion.Text;
+            estudianteSeleccionado.Sexo= cmbSexo.SelectedItem.ToString();
+            estudianteSeleccionado.UsuarioId = cmbUsuario.SelectedValue != null ? (int)cmbUsuario.SelectedValue : 0;
+            estudianteSeleccionado.FechaInscripcion = dtPckInscripcion.Value;
+            estudianteDAO.UpdateEstudiante(estudianteSeleccionado);
 
         }
 
@@ -85,14 +91,27 @@ namespace lmsProyectoFinal
                     Nombre = (string)row.Cells["Nombre"].Value,
                     Direccion = (string)row.Cells["Direccion"].Value,
                     Sexo = (string)row.Cells["Sexo"].Value,
-                    UsuarioId = (int)row.Cells["UsuarioId"].Value
+                    UsuarioId = (int)row.Cells["UsuarioId"].Value,
+                    FechaInscripcion = (DateTime)row.Cells["FechaInscripcion"].Value,
                 };
                 txtNombre.Text = estudianteSeleccionado.Nombre;
                 txtDireccion.Text = estudianteSeleccionado.Direccion;
                 cmbSexo.SelectedItem= estudianteSeleccionado.Sexo;
                 cmbUsuario.SelectedValue = estudianteSeleccionado.UsuarioId;
+                dtPckInscripcion.Value = estudianteSeleccionado.FechaInscripcion;
                 esNuevo = false;
             }
+        }
+        private void inicializarCampos()
+        {
+            txtDireccion.Clear();
+            txtNombre.Clear();
+        }
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            inicializarCampos();
+            estudianteSeleccionado = null;
+            esNuevo= true;
         }
     }
 
