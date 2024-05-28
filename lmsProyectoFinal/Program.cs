@@ -16,7 +16,7 @@ namespace lmsProyectoFinal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FRMMenuAdmin());
+            Application.Run(new Form1());
         }
     }
 }

@@ -57,5 +57,10 @@ namespace lmsProyectoFinal
             txtContrasenia.Clear();
             txtUsuario.Clear();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
