@@ -103,6 +103,7 @@
     <Compile Include="daos\CursoDAO.cs" />
     <Compile Include="daos\EntregaDAO.cs" />
     <Compile Include="daos\EstudianteDAO.cs" />
+    <Compile Include="daos\ForoDao.cs" />
     <Compile Include="FRMActividades.cs">
       <SubType>Form</SubType>
     </Compile>
