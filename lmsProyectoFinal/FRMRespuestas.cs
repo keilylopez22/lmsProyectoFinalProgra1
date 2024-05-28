@@ -55,11 +55,11 @@ namespace lmsProyectoFinal
                 Respuesta respuesta = new Respuesta
                 {
                     ForoId = foro.Id,
-                    Contenido = txtDescripcion.Text,
+                    Contenido = txtContenido.Text,
                     Autor = autor,
                 };
                 respuestaDao.AddRespuesta(respuesta);
-                txtDescripcion.Clear();
+                txtContenido.Clear();
                 ListarRespuestas();
             }
                 

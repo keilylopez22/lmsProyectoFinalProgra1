@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.dgvRespuestas = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtContenido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnResponder = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRespuestas)).BeginInit();
@@ -114,14 +114,14 @@
             this.dgvRespuestas.Size = new System.Drawing.Size(868, 150);
             this.dgvRespuestas.TabIndex = 32;
             // 
-            // textBox1
+            // txtContenido
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(54, 252);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(868, 79);
-            this.textBox1.TabIndex = 34;
+            this.txtContenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContenido.Location = new System.Drawing.Point(54, 252);
+            this.txtContenido.Multiline = true;
+            this.txtContenido.Name = "txtContenido";
+            this.txtContenido.Size = new System.Drawing.Size(868, 79);
+            this.txtContenido.TabIndex = 34;
             // 
             // label1
             // 
@@ -153,7 +153,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(997, 568);
             this.Controls.Add(this.btnResponder);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtContenido);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvRespuestas);
             this.Controls.Add(this.label3);
@@ -179,7 +179,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.DataGridView dgvRespuestas;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtContenido;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnResponder;
     }
