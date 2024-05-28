@@ -139,10 +139,10 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // datePickFechaEntrega
+            // dtpckFechaCreacion
             // 
             this.datePickFechaEntrega.Location = new System.Drawing.Point(50, 97);
-            this.datePickFechaEntrega.Name = "datePickFechaEntrega";
+            this.datePickFechaEntrega.Name = "dtpckFechaCreacion";
             this.datePickFechaEntrega.Size = new System.Drawing.Size(200, 22);
             this.datePickFechaEntrega.TabIndex = 18;
             // 
