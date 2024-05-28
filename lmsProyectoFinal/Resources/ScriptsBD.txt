@@ -1,0 +1,101 @@
+﻿CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `contrasenia` varchar(255) DEFAULT NULL,
+  `rol` enum('administrador','profesor','estudiante') NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
+);
+
+
+CREATE TABLE `estudiantes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario_id` int(11) DEFAULT NULL,
+  `nombre` varchar(100) DEFAULT NULL,
+  `direccion` varchar(255) DEFAULT NULL,
+  `sexo` enum('masculino','femenino','otro') DEFAULT NULL,
+  `fecha_inscripcion` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `usuario_id` (`usuario_id`),
+  CONSTRAINT `estudiantes_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`)
+);
+
+CREATE TABLE `profesores` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario_id` int(11) DEFAULT NULL,
+  `nombre` varchar(100) DEFAULT NULL,
+  `direccion` varchar(255) DEFAULT NULL,
+  `sexo` enum('masculino','femenino','otro') DEFAULT NULL,
+  `fecha_contratacion` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `usuario_id` (`usuario_id`),
+  CONSTRAINT `profesores_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`)
+);
+
+CREATE TABLE `cursos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  `descripcion` text DEFAULT NULL,
+  `fecha_inicio` date DEFAULT NULL,
+  `fecha_fin` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `asignacionestudiantescursos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `curso_id` int(11) DEFAULT NULL,
+  `estudiante_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `curso_id` (`curso_id`),
+  KEY `estudiante_id` (`estudiante_id`),
+  CONSTRAINT `asignacionestudiantescursos_ibfk_1` FOREIGN KEY (`curso_id`) REFERENCES `cursos` (`id`),
+  CONSTRAINT `asignacionestudiantescursos_ibfk_2` FOREIGN KEY (`estudiante_id`) REFERENCES `estudiantes` (`id`)
+);
+
+CREATE TABLE `asignacioncursosprofesores` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `curso_id` int(11) DEFAULT NULL,
+  `profesor_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `curso_id` (`curso_id`),
+  KEY `profesor_id` (`profesor_id`),
+  CONSTRAINT `asignacioncursosprofesores_ibfk_1` FOREIGN KEY (`curso_id`) REFERENCES `cursos` (`id`),
+  CONSTRAINT `asignacioncursosprofesores_ibfk_2` FOREIGN KEY (`profesor_id`) REFERENCES `profesores` (`id`)
+);
+
+CREATE TABLE `materialescurso` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `curso_id` int(11) DEFAULT NULL,
+  `titulo` varchar(100) NOT NULL,
+  `descripcion` text DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `curso_id` (`curso_id`),
+  CONSTRAINT `materialescurso_ibfk_1` FOREIGN KEY (`curso_id`) REFERENCES `cursos` (`id`)
+);
+
+CREATE TABLE `actividades` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `curso_id` int(11) DEFAULT NULL,
+  `titulo` varchar(100) NOT NULL,
+  `descripcion` text DEFAULT NULL,
+  `fecha_entrega` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `curso_id` (`curso_id`),
+  CONSTRAINT `actividades_ibfk_1` FOREIGN KEY (`curso_id`) REFERENCES `cursos` (`id`)
+);
+
+CREATE TABLE `entregas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `actividad_id` int(11) DEFAULT NULL,
+  `estudiante_id` int(11) DEFAULT NULL,
+  `fecha_entrega` date DEFAULT NULL,
+  `archivo_url` varchar(255) DEFAULT NULL,
+  `calificacion` decimal(5,2) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `actividad_id` (`actividad_id`),
+  KEY `estudiante_id` (`estudiante_id`),
+  CONSTRAINT `entregas_ibfk_1` FOREIGN KEY (`actividad_id`) REFERENCES `actividades` (`id`),
+  CONSTRAINT `entregas_ibfk_2` FOREIGN KEY (`estudiante_id`) REFERENCES `estudiantes` (`id`)
+);

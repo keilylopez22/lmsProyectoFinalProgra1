@@ -1,0 +1,43 @@
+﻿INSERT INTO usuarios (nombre,email,contrasenia,rol) VALUES
+	 ('Administrador1','admin1@example.com','password','administrador'),
+	 ('Profesor1','prof1@example.com','password','profesor'),
+	 ('Profesor2','prof2@example.com','password','profesor'),
+	 ('Estudiante1','est1@example.com','password','estudiante'),
+	 ('Estudiante2','est2@example.com','password','estudiante'),
+	 ('Estudiante3','est3@example.com','password','estudiante');
+
+INSERT INTO estudiantes (usuario_id,nombre,direccion,sexo,fecha_inscripcion) VALUES
+	 (4,'Juan Pérez','Calle Falsa 123','masculino','2023-01-01'),
+	 (5,'María López','Calle Real 456','femenino','2023-01-02'),
+	 (6,'Alex García','Avenida Siempre Viva 789','otro','2023-01-03');
+
+INSERT INTO profesores (usuario_id,nombre,direccion,sexo,fecha_contratacion) VALUES
+	 (2,'Carlos Ruiz','Calle del Profesor 101','masculino','2022-01-01'),
+	 (3,'Ana Martínez','Boulevard de la Sabiduría 202','femenino','2022-01-02');
+
+INSERT INTO cursos (nombre,descripcion,fecha_inicio,fecha_fin) VALUES
+	 ('Matemáticas','Curso de matemáticas básicas','2023-02-01','2023-06-01'),
+	 ('Ciencias','Curso de ciencias naturales','2023-02-01','2023-06-01');
+
+INSERT INTO asignacionestudiantescursos (curso_id,estudiante_id) VALUES
+	 (1,1),
+	 (1,2),
+	 (2,3);
+	
+INSERT INTO asignacioncursosprofesores (curso_id,profesor_id) VALUES
+	 (1,1),
+	 (2,2);
+
+INSERT INTO materialescurso (curso_id,titulo,descripcion,url) VALUES
+	 (1,'Material 1 de Matemáticas','Descripción del material 1 de matemáticas','http://example.com/matematicas1'),
+	 (2,'Material 1 de Ciencias','Descripción del material 1 de ciencias','http://example.com/ciencias1');
+
+INSERT INTO actividades (curso_id,titulo,descripcion,fecha_entrega) VALUES
+	 (1,'Actividad 1 de Matemáticas','Descripción de la actividad 1 de matemáticas','2023-03-01'),
+	 (2,'Actividad 1 de Ciencias','Descripción de la actividad 1 de ciencias','2023-03-01');
+
+INSERT INTO entregas (actividad_id,estudiante_id,fecha_entrega,archivo_url,calificacion) VALUES
+	 (1,1,'2023-03-02','http://example.com/entrega1',95.50),
+	 (1,2,'2023-03-02','http://example.com/entrega2',87.00),
+	 (2,3,'2023-03-02','http://example.com/entrega3',92.00);
+
