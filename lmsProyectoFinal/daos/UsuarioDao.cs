@@ -132,5 +132,18 @@ namespace lmsProyectoFinal
             }
             return sesion;
         }
+
+        public static bool isAdmin()
+        {
+            return getInstance().Usuario!=null?getInstance().Usuario.Rol=="administrador":true;
+        }
+        public static bool isEstudiante()
+        {
+            return getInstance().Usuario != null ? getInstance().Usuario.Rol == "estudiante" : true;
+        }
+        public static bool IsProfesor()
+        {
+            return getInstance().Usuario != null ? getInstance().Usuario.Rol == "profesor" : true;
+        }
     }
 }
