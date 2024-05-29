@@ -51,10 +51,6 @@ namespace lmsProyectoFinal
         {
             mostarSubMenu(pnlSubMenuCursos);
         }
-        private void btnCalificaciones_Click(object sender, EventArgs e)
-        {
-
-        }
 
         Form activo = null;
         private void mostrarForm(Form form)

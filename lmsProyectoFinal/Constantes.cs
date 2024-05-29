@@ -11,8 +11,8 @@ namespace lmsProyectoFinal
     internal class Constantes
     {
         public static string connectionString = "server=localhost;" +
-            "user=root;" +
-            "password=;" +
-            "database=KLMS;";
+            "user=progra2024;" +
+            "password=progra2024;" +
+            "database=lms;";
     }
 }
