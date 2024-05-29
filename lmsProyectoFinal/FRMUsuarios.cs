@@ -18,8 +18,20 @@ namespace lmsProyectoFinal
         public FRMUsuarios()
         {
             InitializeComponent();
+            limpiarCampos();
         }
 
+        private void revisarPermisos()
+        {
+            bool permitido = Sesion.getInstance().Usuario.Rol == "administrador";
+            txtContrasenia.Enabled= permitido;
+            txtEmail.Enabled= permitido;
+            txtNombre.Enabled= permitido;
+            cmbRol.Enabled= permitido;
+            btnGuardar.Enabled= permitido;
+            btnEliminar.Enabled= permitido;
+            btnCancelar.Enabled= permitido;
+        }
         private void listarUsuarios()
         {
             
@@ -29,6 +41,14 @@ namespace lmsProyectoFinal
         private void FRMUsuarios_Load(object sender, EventArgs e)
         {
             listarUsuarios();
+        }
+
+        private void limpiarCampos()
+        {
+            txtContrasenia.Clear();
+            txtEmail.Clear();
+            txtNombre.Clear();
+            revisarPermisos();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -42,6 +62,7 @@ namespace lmsProyectoFinal
                 actualizar();
             }
             listarUsuarios();
+            limpiarCampos();
         }
 
         private void guardarNuevo()
