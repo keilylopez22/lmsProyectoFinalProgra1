@@ -16,5 +16,15 @@ namespace lmsProyectoFinal
         {
             InitializeComponent();
         }
+
+        private void pnlSubMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
