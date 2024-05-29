@@ -135,5 +135,12 @@ namespace lmsProyectoFinal
             FRMForos form = new FRMForos();
             mostrarForm(form);
         }
+
+        
+
+        private void FRMMenuAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

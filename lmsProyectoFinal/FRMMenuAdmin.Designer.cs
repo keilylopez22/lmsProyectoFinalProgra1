@@ -393,6 +393,7 @@
             this.Name = "FRMMenuAdmin";
             this.Text = "Administrador";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FRMMenuAdmin_FormClosed);
             this.pnlMenu.ResumeLayout(false);
             this.pnlInformes.ResumeLayout(false);
             this.pnlSubMenuCursos.ResumeLayout(false);
