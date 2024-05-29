@@ -42,9 +42,18 @@
             this.cmbRol = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbFoto = new System.Windows.Forms.Label();
+            this.pnlLogos = new System.Windows.Forms.Panel();
+            this.pnlLogo1 = new System.Windows.Forms.Panel();
+            this.pnllogo2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.panel1.SuspendLayout();
+            this.pnlLogos.SuspendLayout();
+            this.pnlLogo1.SuspendLayout();
+            this.pnllogo2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +62,7 @@
             this.dgvUsuarios.AllowUserToAddRows = false;
             this.dgvUsuarios.AllowUserToDeleteRows = false;
             this.dgvUsuarios.AllowUserToOrderColumns = true;
-            this.dgvUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dgvUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsuarios.Location = new System.Drawing.Point(12, 242);
             this.dgvUsuarios.Name = "dgvUsuarios";
@@ -121,10 +130,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(31, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 26);
+            this.label4.Size = new System.Drawing.Size(45, 26);
             this.label4.TabIndex = 11;
             this.label4.Text = "Rol";
             // 
@@ -132,10 +141,10 @@
             // 
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(645, 141);
+            this.btnCancelar.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(603, 180);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(122, 37);
+            this.btnCancelar.Size = new System.Drawing.Size(168, 37);
             this.btnCancelar.TabIndex = 19;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -145,10 +154,10 @@
             // 
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(60, 141);
+            this.btnGuardar.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(58, 175);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(101, 37);
+            this.btnGuardar.Size = new System.Drawing.Size(225, 37);
             this.btnGuardar.TabIndex = 18;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -165,15 +174,15 @@
             this.cmbRol.Name = "cmbRol";
             this.cmbRol.Size = new System.Drawing.Size(366, 24);
             this.cmbRol.TabIndex = 20;
-            // 
+            
             // btnEliminar
             // 
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(364, 141);
+            this.btnEliminar.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(355, 175);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(122, 37);
+            this.btnEliminar.Size = new System.Drawing.Size(212, 42);
             this.btnEliminar.TabIndex = 21;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -181,11 +190,58 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(948, 32);
+            this.panel1.Controls.Add(this.lbFoto);
+            this.panel1.Location = new System.Drawing.Point(949, 38);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(262, 222);
-            this.panel1.TabIndex = 22;
+            this.panel1.Size = new System.Drawing.Size(220, 222);
+            this.panel1.TabIndex = 23;
+            // 
+            // lbFoto
+            // 
+            this.lbFoto.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoto.Location = new System.Drawing.Point(36, 71);
+            this.lbFoto.Name = "lbFoto";
+            this.lbFoto.Size = new System.Drawing.Size(155, 91);
+            this.lbFoto.TabIndex = 38;
+            this.lbFoto.Text = "Foto no disponible";
+            this.lbFoto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlLogos
+            // 
+            this.pnlLogos.Controls.Add(this.pnllogo2);
+            this.pnlLogos.Controls.Add(this.pnlLogo1);
+            this.pnlLogos.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlLogos.Location = new System.Drawing.Point(1274, 0);
+            this.pnlLogos.Name = "pnlLogos";
+            this.pnlLogos.Size = new System.Drawing.Size(200, 501);
+            this.pnlLogos.TabIndex = 24;
+            // 
+            // pnlLogo1
+            // 
+            this.pnlLogo1.Controls.Add(this.pictureBox1);
+            this.pnlLogo1.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo1.Name = "pnlLogo1";
+            this.pnlLogo1.Size = new System.Drawing.Size(200, 247);
+            this.pnlLogo1.TabIndex = 0;
+            // 
+            // pnllogo2
+            // 
+            this.pnllogo2.Controls.Add(this.pictureBox2);
+            this.pnllogo2.Location = new System.Drawing.Point(3, 254);
+            this.pnllogo2.Name = "pnllogo2";
+            this.pnllogo2.Size = new System.Drawing.Size(200, 247);
+            this.pnllogo2.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(200, 247);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -193,7 +249,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(262, 222);
+            this.pictureBox1.Size = new System.Drawing.Size(200, 247);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -202,8 +258,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(1234, 501);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1474, 501);
+            this.Controls.Add(this.pnlLogos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.cmbRol);
@@ -223,6 +280,10 @@
             this.Load += new System.EventHandler(this.FRMUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.pnlLogos.ResumeLayout(false);
+            this.pnlLogo1.ResumeLayout(false);
+            this.pnllogo2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -244,6 +305,11 @@
         private System.Windows.Forms.ComboBox cmbRol;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbFoto;
+        private System.Windows.Forms.Panel pnlLogos;
+        private System.Windows.Forms.Panel pnllogo2;
+        private System.Windows.Forms.Panel pnlLogo1;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
