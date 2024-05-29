@@ -113,6 +113,29 @@ namespace lmsProyectoFinal
             estudianteSeleccionado = null;
             esNuevo= true;
         }
+
+        private void FRMEstudiantes_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void CargaFoto()
+        {
+            try
+            {
+                lbFoto.Visible = false;
+                //pctbxFoto.Image = Image.FromFile();
+            }
+            catch
+            {
+                pctbxFoto.Image =null;
+                lbFoto.Visible = true;
+            }
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            CargaFoto();
+        }
     }
 
 }

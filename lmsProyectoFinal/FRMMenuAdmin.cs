@@ -91,8 +91,7 @@ namespace lmsProyectoFinal
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FRMProfesores form = new FRMProfesores();
-            mostrarForm(form);
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -134,6 +133,11 @@ namespace lmsProyectoFinal
         {
             FRMForos form = new FRMForos();
             mostrarForm(form);
+        }
+
+        private void pnlContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
