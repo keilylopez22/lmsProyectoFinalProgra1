@@ -152,7 +152,7 @@
     <Compile Include="FRMMenuUsuar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRMMenuUsuar.Designer.cs">  
+    <Compile Include="FRMMenuUsuar.Designer.cs">
       <DependentUpon>FRMMenuUsuar.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMForos.cs">
@@ -172,12 +172,6 @@
     </Compile>
     <Compile Include="FRMMenuAdmin.Designer.cs">
       <DependentUpon>FRMMenuAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FRMProfesores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRMProfesores.Designer.cs">
-      <DependentUpon>FRMProfesores.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMRespuestas.cs">
       <SubType>Form</SubType>
@@ -227,9 +221,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMMenuAdmin.resx">
       <DependentUpon>FRMMenuAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FRMProfesores.resx">
-      <DependentUpon>FRMProfesores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMRespuestas.resx">
       <DependentUpon>FRMRespuestas.cs</DependentUpon>
