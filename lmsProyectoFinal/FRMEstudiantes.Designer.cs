@@ -42,7 +42,9 @@
             this.cmbSexo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dtPckInscripcion = new System.Windows.Forms.DateTimePicker();
+            this.pnlInputs = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
+            this.pnlInputs.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvEstudiantes
@@ -71,6 +73,7 @@
             this.btnEliminar.TabIndex = 32;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // cmbUsuario
             // 
@@ -191,31 +194,41 @@
             this.dtPckInscripcion.Size = new System.Drawing.Size(200, 22);
             this.dtPckInscripcion.TabIndex = 35;
             // 
+            // pnlInputs
+            // 
+            this.pnlInputs.Controls.Add(this.dtPckInscripcion);
+            this.pnlInputs.Controls.Add(this.label5);
+            this.pnlInputs.Controls.Add(this.cmbSexo);
+            this.pnlInputs.Controls.Add(this.btnEliminar);
+            this.pnlInputs.Controls.Add(this.cmbUsuario);
+            this.pnlInputs.Controls.Add(this.btnCancelar);
+            this.pnlInputs.Controls.Add(this.btnGuardar);
+            this.pnlInputs.Controls.Add(this.label4);
+            this.pnlInputs.Controls.Add(this.label3);
+            this.pnlInputs.Controls.Add(this.label1);
+            this.pnlInputs.Controls.Add(this.txtDireccion);
+            this.pnlInputs.Controls.Add(this.label2);
+            this.pnlInputs.Controls.Add(this.txtNombre);
+            this.pnlInputs.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlInputs.Location = new System.Drawing.Point(0, 0);
+            this.pnlInputs.Name = "pnlInputs";
+            this.pnlInputs.Size = new System.Drawing.Size(941, 259);
+            this.pnlInputs.TabIndex = 36;
+            // 
             // FRMEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(941, 480);
-            this.Controls.Add(this.dtPckInscripcion);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.cmbSexo);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.cmbUsuario);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.pnlInputs);
             this.Controls.Add(this.dgvEstudiantes);
             this.Name = "FRMEstudiantes";
             this.Text = "FRMEstudiantes";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
+            this.pnlInputs.ResumeLayout(false);
+            this.pnlInputs.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -235,5 +248,6 @@
         private System.Windows.Forms.ComboBox cmbSexo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtPckInscripcion;
+        private System.Windows.Forms.Panel pnlInputs;
     }
 }

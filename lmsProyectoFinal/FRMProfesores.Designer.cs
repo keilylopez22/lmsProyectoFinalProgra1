@@ -42,6 +42,7 @@
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.pnlInputs = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfesores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,25 +193,35 @@
             this.txtNombre.Size = new System.Drawing.Size(366, 26);
             this.txtNombre.TabIndex = 36;
             // 
+            // pnlInputs
+            // 
+            this.pnlInputs.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlInputs.Location = new System.Drawing.Point(0, 0);
+            this.pnlInputs.Name = "pnlInputs";
+            this.pnlInputs.Size = new System.Drawing.Size(1001, 244);
+            this.pnlInputs.TabIndex = 49;
+            this.pnlInputs.Controls.Add(this.dtPckInscripcion);
+            this.pnlInputs.Controls.Add(this.label5);
+            this.pnlInputs.Controls.Add(this.cmbSexo);
+            this.pnlInputs.Controls.Add(this.btnEliminar);
+            this.pnlInputs.Controls.Add(this.cmbUsuario);
+            this.pnlInputs.Controls.Add(this.btnCancelar);
+            this.pnlInputs.Controls.Add(this.btnGuardar);
+            this.pnlInputs.Controls.Add(this.label4);
+            this.pnlInputs.Controls.Add(this.label3);
+            this.pnlInputs.Controls.Add(this.label1);
+            this.pnlInputs.Controls.Add(this.txtDireccion);
+            this.pnlInputs.Controls.Add(this.label2);
+            this.pnlInputs.Controls.Add(this.txtNombre);
+            // 
             // FRMProfesores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1001, 450);
-            this.Controls.Add(this.dtPckInscripcion);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.cmbSexo);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.cmbUsuario);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.pnlInputs);
+            
             this.Controls.Add(this.dgvProfesores);
             this.Name = "FRMProfesores";
             this.Text = "FRMProfesores";
@@ -236,5 +247,6 @@
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Panel pnlInputs;
     }
 }

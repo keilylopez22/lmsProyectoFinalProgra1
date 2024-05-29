@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace lmsProyectoFinal
 {
@@ -21,6 +22,17 @@ namespace lmsProyectoFinal
             InitializeComponent();
             listarUsuarios();
             listarProfesores();
+            revisarPermisos();
+        }
+
+        private void revisarPermisos()
+        {
+            bool permitido = Sesion.isAdmin();
+            pnlInputs.Enabled = permitido;
+            foreach (Control c in pnlInputs.Controls)
+            {
+                c.Enabled = permitido;
+            }
         }
         private void listarUsuarios()
         {

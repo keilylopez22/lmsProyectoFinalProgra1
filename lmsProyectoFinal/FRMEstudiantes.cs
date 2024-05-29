@@ -21,8 +21,18 @@ namespace lmsProyectoFinal
             InitializeComponent();
             listarUsuarios();
             listarEstudiantes();
+            revisarPermisos();
         }
 
+        private void revisarPermisos()
+        {
+            bool permitido = Sesion.isAdmin();
+            pnlInputs.Enabled = permitido;
+            foreach (Control c in pnlInputs.Controls)
+            {
+                c.Enabled = permitido;
+            }
+        }
         private void listarUsuarios()
         {
             List<Usuario> lista = new List<Usuario>();
@@ -43,7 +53,11 @@ namespace lmsProyectoFinal
             dgvEstudiantes.DataSource= estudianteDAO.GetAllEstudiantes();
             dgvEstudiantes.Columns["UsuarioId"].Visible = false;
         }
-
+        private void limpiarCampos()
+        {
+            txtNombre.Clear();
+            txtDireccion.Clear();
+        }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (esNuevo)
@@ -63,7 +77,8 @@ namespace lmsProyectoFinal
                 Nombre = txtNombre.Text,
                 Direccion = txtDireccion.Text,
                 Sexo = cmbSexo.SelectedItem.ToString(),
-                UsuarioId = cmbUsuario.SelectedValue != null ? (int)cmbUsuario.SelectedValue : 0
+                UsuarioId = cmbUsuario.SelectedValue != null ? (int)cmbUsuario.SelectedValue : 0,
+                FechaInscripcion = dtPckInscripcion.Value
             };
             estudianteDAO.AddEstudiante(estudiante);
             listarEstudiantes();
@@ -112,6 +127,16 @@ namespace lmsProyectoFinal
             inicializarCampos();
             estudianteSeleccionado = null;
             esNuevo= true;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (estudianteSeleccionado != null)
+            {
+                estudianteDAO.DeleteEstudiante(estudianteSeleccionado.Id);
+            }
+            listarEstudiantes();
+            limpiarCampos();
         }
     }
 
