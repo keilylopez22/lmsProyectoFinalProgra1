@@ -128,5 +128,11 @@ namespace lmsProyectoFinal
         {
 
         }
+
+        private void btnForos_Click(object sender, EventArgs e)
+        {
+            FRMForos form = new FRMForos();
+            mostrarForm(form);
+        }
     }
 }

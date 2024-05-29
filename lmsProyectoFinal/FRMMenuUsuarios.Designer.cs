@@ -52,6 +52,7 @@
             this.pnlSubMenuIformes = new System.Windows.Forms.Panel();
             this.btnCalificaciones = new System.Windows.Forms.Button();
             this.btnInformes = new System.Windows.Forms.Button();
+            this.btnForos = new System.Windows.Forms.Button();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PNLSubMenuUsuarios.SuspendLayout();
@@ -68,7 +69,7 @@
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(265, 0);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(611, 786);
+            this.pnlContenedor.Size = new System.Drawing.Size(1073, 786);
             this.pnlContenedor.TabIndex = 1;
             this.pnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContenedor_Paint);
             // 
@@ -232,7 +233,7 @@
             this.btnCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCursos.Location = new System.Drawing.Point(0, 550);
             this.btnCursos.Name = "btnCursos";
-            this.btnCursos.Size = new System.Drawing.Size(265, 40);
+            this.btnCursos.Size = new System.Drawing.Size(265, 34);
             this.btnCursos.TabIndex = 6;
             this.btnCursos.Text = "Cursos";
             this.btnCursos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -244,18 +245,18 @@
             this.pnlSubMenuCursos.Controls.Add(this.btnActividades);
             this.pnlSubMenuCursos.Controls.Add(this.btnListarCursos);
             this.pnlSubMenuCursos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubMenuCursos.Location = new System.Drawing.Point(0, 590);
+            this.pnlSubMenuCursos.Location = new System.Drawing.Point(0, 584);
             this.pnlSubMenuCursos.Name = "pnlSubMenuCursos";
-            this.pnlSubMenuCursos.Size = new System.Drawing.Size(265, 94);
+            this.pnlSubMenuCursos.Size = new System.Drawing.Size(265, 104);
             this.pnlSubMenuCursos.TabIndex = 7;
             // 
             // btnActividades
             // 
             this.btnActividades.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnActividades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActividades.Location = new System.Drawing.Point(0, 42);
+            this.btnActividades.Location = new System.Drawing.Point(0, 36);
             this.btnActividades.Name = "btnActividades";
-            this.btnActividades.Size = new System.Drawing.Size(265, 42);
+            this.btnActividades.Size = new System.Drawing.Size(265, 38);
             this.btnActividades.TabIndex = 3;
             this.btnActividades.Text = "Actividades";
             this.btnActividades.UseVisualStyleBackColor = true;
@@ -267,7 +268,7 @@
             this.btnListarCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListarCursos.Location = new System.Drawing.Point(0, 0);
             this.btnListarCursos.Name = "btnListarCursos";
-            this.btnListarCursos.Size = new System.Drawing.Size(265, 42);
+            this.btnListarCursos.Size = new System.Drawing.Size(265, 36);
             this.btnListarCursos.TabIndex = 1;
             this.btnListarCursos.Text = "Listar";
             this.btnListarCursos.UseVisualStyleBackColor = true;
@@ -295,9 +296,10 @@
             // 
             // pnlSubMenuIformes
             // 
+            this.pnlSubMenuIformes.Controls.Add(this.btnForos);
             this.pnlSubMenuIformes.Controls.Add(this.btnCalificaciones);
             this.pnlSubMenuIformes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubMenuIformes.Location = new System.Drawing.Point(0, 724);
+            this.pnlSubMenuIformes.Location = new System.Drawing.Point(0, 728);
             this.pnlSubMenuIformes.Name = "pnlSubMenuIformes";
             this.pnlSubMenuIformes.Size = new System.Drawing.Size(265, 79);
             this.pnlSubMenuIformes.TabIndex = 9;
@@ -320,7 +322,7 @@
             this.btnInformes.FlatAppearance.BorderSize = 0;
             this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInformes.Location = new System.Drawing.Point(0, 684);
+            this.btnInformes.Location = new System.Drawing.Point(0, 688);
             this.btnInformes.Name = "btnInformes";
             this.btnInformes.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnInformes.Size = new System.Drawing.Size(265, 40);
@@ -330,11 +332,23 @@
             this.btnInformes.UseVisualStyleBackColor = true;
             this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
+            // btnForos
+            // 
+            this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForos.Location = new System.Drawing.Point(0, 36);
+            this.btnForos.Name = "btnForos";
+            this.btnForos.Size = new System.Drawing.Size(265, 36);
+            this.btnForos.TabIndex = 1;
+            this.btnForos.Text = "Foros";
+            this.btnForos.UseVisualStyleBackColor = true;
+            this.btnForos.Click += new System.EventHandler(this.btnForos_Click);
+            // 
             // FRMMenuUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 786);
+            this.ClientSize = new System.Drawing.Size(1338, 786);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlMenu);
             this.Name = "FRMMenuUsuarios";
@@ -376,5 +390,6 @@
         private System.Windows.Forms.Panel pnlSubMenuIformes;
         private System.Windows.Forms.Button btnCalificaciones;
         private System.Windows.Forms.Button btnInformes;
+        private System.Windows.Forms.Button btnForos;
     }
 }

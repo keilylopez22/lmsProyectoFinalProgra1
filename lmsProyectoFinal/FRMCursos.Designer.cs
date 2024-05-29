@@ -199,6 +199,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.dgvCursos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRMCursos";
             this.Text = "FRMCursos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).EndInit();
