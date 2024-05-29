@@ -22,11 +22,11 @@ namespace lmsProyectoFinal
 
         private void OcultarSubMenu()
         {
-            PNLSubMenuUsuarios.Visible = false;
+            pnlSubMenuUsuarios.Visible = false;
             pnlSubMenuEstudiantes.Visible = false;
             pnlSubMenuProfesores.Visible = false;
             pnlSubMenuCursos.Visible = false;
-            pnlSubMenuIformes.Visible=false;
+            pnlInformes.Visible=false;
             
         }
         private void mostarSubMenu(Panel subMenu)
@@ -36,7 +36,7 @@ namespace lmsProyectoFinal
         }
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            mostarSubMenu(PNLSubMenuUsuarios);
+            mostarSubMenu(pnlSubMenuUsuarios);
 
         }
         private void btnEstudiantes_Click(object sender, EventArgs e)
@@ -111,7 +111,7 @@ namespace lmsProyectoFinal
 
         private void btnInformes_Click(object sender, EventArgs e)
         {
-            mostarSubMenu(pnlSubMenuIformes);
+            mostarSubMenu(pnlInformes);
         }
 
         private void btnActividades_Click(object sender, EventArgs e)

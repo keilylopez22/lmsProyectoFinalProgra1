@@ -80,7 +80,7 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(265, 786);
+            this.pnlMenu.Size = new System.Drawing.Size(265, 836);
             this.pnlMenu.TabIndex = 1;
             // 
             // pnlInformes
@@ -106,6 +106,7 @@
             this.btnCalificaciones.Text = "Calificaciones";
             this.btnCalificaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCalificaciones.UseVisualStyleBackColor = true;
+            this.btnCalificaciones.Click += new System.EventHandler(this.btnCalificaciones_Click_1);
             // 
             // btnInformes
             // 
@@ -121,6 +122,7 @@
             this.btnInformes.Text = "Informes";
             this.btnInformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInformes.UseVisualStyleBackColor = true;
+            this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
             // pnlSubMenuCursos
             // 
@@ -162,6 +164,7 @@
             this.btnActividades.Text = "Actividades";
             this.btnActividades.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnActividades.UseVisualStyleBackColor = true;
+            this.btnActividades.Click += new System.EventHandler(this.btnActividades_Click);
             // 
             // btnListarCursos
             // 
@@ -177,6 +180,7 @@
             this.btnListarCursos.Text = "Listar";
             this.btnListarCursos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnListarCursos.UseVisualStyleBackColor = true;
+            this.btnListarCursos.Click += new System.EventHandler(this.btnListarCursos_Click);
             // 
             // btnCursos
             // 
@@ -192,6 +196,7 @@
             this.btnCursos.Text = "Cursos";
             this.btnCursos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCursos.UseVisualStyleBackColor = true;
+            this.btnCursos.Click += new System.EventHandler(this.btnCursos_Click);
             // 
             // pnlSubMenuProfesores
             // 
@@ -217,6 +222,7 @@
             this.btnAsigProfesor.Text = "Asignaciones";
             this.btnAsigProfesor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAsigProfesor.UseVisualStyleBackColor = true;
+            this.btnAsigProfesor.Click += new System.EventHandler(this.btnAsignacionProfesores_Click);
             // 
             // btnListarProfesores
             // 
@@ -232,6 +238,7 @@
             this.btnListarProfesores.Text = "Listar";
             this.btnListarProfesores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnListarProfesores.UseVisualStyleBackColor = true;
+            this.btnListarProfesores.Click += new System.EventHandler(this.btnListarProfesores_Click);
             // 
             // btnProfesores
             // 
@@ -247,6 +254,7 @@
             this.btnProfesores.Text = "Profesores";
             this.btnProfesores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProfesores.UseVisualStyleBackColor = true;
+            this.btnProfesores.Click += new System.EventHandler(this.btnProfesores_Click);
             // 
             // pnlSubMenuEstudiantes
             // 
@@ -272,6 +280,7 @@
             this.btnAsignacion.Text = "Asignacion";
             this.btnAsignacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAsignacion.UseVisualStyleBackColor = true;
+            this.btnAsignacion.Click += new System.EventHandler(this.btnAsignacionEstudiantes_Click);
             // 
             // btnListarEstudiantes
             // 
@@ -287,6 +296,7 @@
             this.btnListarEstudiantes.Text = "Listar";
             this.btnListarEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnListarEstudiantes.UseVisualStyleBackColor = true;
+            this.btnListarEstudiantes.Click += new System.EventHandler(this.btnListarEstudiantes_Click);
             // 
             // btnEstudiantes
             // 
@@ -302,6 +312,7 @@
             this.btnEstudiantes.Text = "Estudiantes";
             this.btnEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEstudiantes.UseVisualStyleBackColor = true;
+            this.btnEstudiantes.Click += new System.EventHandler(this.btnEstudiantes_Click);
             // 
             // pnlSubMenuUsuarios
             // 
@@ -326,6 +337,7 @@
             this.btnListarUsuarios.Text = "Listar";
             this.btnListarUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnListarUsuarios.UseVisualStyleBackColor = true;
+            this.btnListarUsuarios.Click += new System.EventHandler(this.bntListarUsuarios_Click);
             // 
             // btnUsuarios
             // 
@@ -341,6 +353,7 @@
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // pnlLogo
             // 
@@ -368,14 +381,14 @@
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(265, 0);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(611, 786);
+            this.pnlContenedor.Size = new System.Drawing.Size(713, 836);
             this.pnlContenedor.TabIndex = 2;
             // 
             // FRMMenuUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 786);
+            this.ClientSize = new System.Drawing.Size(978, 836);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlMenu);
             this.Name = "FRMMenuUsuarios";
