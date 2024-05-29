@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMAsignacionProfesor));
             this.dgvAsignacion = new System.Windows.Forms.DataGridView();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -36,7 +37,11 @@
             this.cmbProfesor = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbCursos = new System.Windows.Forms.ComboBox();
+            this.pnllogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsignacion)).BeginInit();
+            this.pnllogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvAsignacion
@@ -44,6 +49,7 @@
             this.dgvAsignacion.AllowUserToAddRows = false;
             this.dgvAsignacion.AllowUserToDeleteRows = false;
             this.dgvAsignacion.AllowUserToOrderColumns = true;
+            this.dgvAsignacion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvAsignacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAsignacion.Location = new System.Drawing.Point(74, 255);
             this.dgvAsignacion.Name = "dgvAsignacion";
@@ -59,7 +65,7 @@
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(476, 141);
+            this.btnEliminar.Location = new System.Drawing.Point(476, 131);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(283, 47);
             this.btnEliminar.TabIndex = 27;
@@ -85,7 +91,7 @@
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(161, 141);
+            this.btnGuardar.Location = new System.Drawing.Point(84, 131);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(205, 37);
             this.btnGuardar.TabIndex = 25;
@@ -131,12 +137,32 @@
             this.cmbCursos.Size = new System.Drawing.Size(322, 28);
             this.cmbCursos.TabIndex = 21;
             // 
+            // pnllogo
+            // 
+            this.pnllogo.Controls.Add(this.pictureBox1);
+            this.pnllogo.Location = new System.Drawing.Point(859, 10);
+            this.pnllogo.Name = "pnllogo";
+            this.pnllogo.Size = new System.Drawing.Size(230, 168);
+            this.pnllogo.TabIndex = 28;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(230, 168);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            // 
             // FRMAsignacionProfesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ClientSize = new System.Drawing.Size(1101, 450);
+            this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnGuardar);
@@ -148,6 +174,8 @@
             this.Name = "FRMAsignacionProfesor";
             this.Text = "FRMAsignacionProfesor";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsignacion)).EndInit();
+            this.pnllogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +191,7 @@
         private System.Windows.Forms.ComboBox cmbProfesor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbCursos;
+        private System.Windows.Forms.Panel pnllogo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
