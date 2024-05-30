@@ -104,6 +104,7 @@
     <Compile Include="daos\EntregaDAO.cs" />
     <Compile Include="daos\EstudianteDAO.cs" />
     <Compile Include="daos\ForoDao.cs" />
+    <Compile Include="daos\GruposDaos.cs" />
     <Compile Include="daos\RespuestaDao.cs" />
     <Compile Include="FRMActividades.cs">
       <SubType>Form</SubType>
@@ -149,10 +150,16 @@
     <Compile Include="FRMEstudiantes.Designer.cs">
       <DependentUpon>FRMEstudiantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMGrupos.Designer.cs">
+      <DependentUpon>FRMGrupos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMMenuUsuar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRMMenuUsuar.Designer.cs">  
+    <Compile Include="FRMMenuUsuar.Designer.cs">
       <DependentUpon>FRMMenuUsuar.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMForos.cs">
@@ -172,6 +179,12 @@
     </Compile>
     <Compile Include="FRMMenuAdmin.Designer.cs">
       <DependentUpon>FRMMenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPerfil.Designer.cs">
+      <DependentUpon>FRMPerfil.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMProfesores.cs">
       <SubType>Form</SubType>
@@ -216,6 +229,9 @@
     <EmbeddedResource Include="FRMEstudiantes.resx">
       <DependentUpon>FRMEstudiantes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMGrupos.resx">
+      <DependentUpon>FRMGrupos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMMenuUsuar.resx">
       <DependentUpon>FRMMenuUsuar.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMMenuAdmin.resx">
       <DependentUpon>FRMMenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPerfil.resx">
+      <DependentUpon>FRMPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMProfesores.resx">
       <DependentUpon>FRMProfesores.cs</DependentUpon>
