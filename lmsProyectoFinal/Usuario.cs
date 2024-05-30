@@ -125,5 +125,23 @@ namespace lmsProyectoFinal
         public DateTime FechaCreacion { get; set; }
     }
 
+    // Clase Modelo para la tabla 'grupos'
+    public class Grupo
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+    }
+
+    // Clase Modelo para la tabla 'grupo_estudiantes'
+    public class GrupoEstudiantes
+    {
+        public int Id { get; set; }
+        public int GrupoId { get; set; }
+        public int EstudianteId { get; set; }
+        public string Grupo { get; set; }
+        public string Estudiante { get; set; } 
+    }
+
 
 }

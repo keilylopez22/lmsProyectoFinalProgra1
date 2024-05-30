@@ -119,3 +119,17 @@ CREATE TABLE Respuestas (
     Fecha_Creacion DATETIME DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT FK_Foro_Respuestas FOREIGN KEY (Foro_ID) REFERENCES Foro(id)
 );
+
+CREATE TABLE `grupos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  `descripcion` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+create table grupo_estudiantes (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`grupo_id` int(11),
+	`estudiante_id` int(11),
+	PRIMARY KEY (`id`)
+);

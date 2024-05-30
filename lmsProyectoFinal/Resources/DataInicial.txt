@@ -60,3 +60,16 @@ INSERT INTO Respuestas (Foro_ID, Contenido, Autor)
 INSERT INTO Respuestas (Foro_ID, Contenido, Autor) 
 	VALUES (2, 'Para entender mejor los postulados de Euclides, recomiendo leer "Los Elementos".', 'Ana Gómez');
 
+insert into grupos (nombre, descripcion) values
+('grupo1','Grupo 1 de estudio'),
+('grupo2','Grupo 2 de estudio'),
+('grupo3','Grupo 3 de estudio'),
+('grupo4','Grupo 4 de estudio');
+
+insert into grupo_estudiantes (grupo_id, estudiante_id) values
+(1,1),
+(1,2),
+(1,3),
+(2,1),
+(2,2),
+(2,3);
