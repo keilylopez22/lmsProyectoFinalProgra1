@@ -142,5 +142,17 @@ namespace lmsProyectoFinal
         {
             Application.Exit();
         }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            FRMPerfil form = new FRMPerfil();
+            mostrarForm(form);
+        }
+
+        private void btnGrupos_Click(object sender, EventArgs e)
+        {
+            FRMGrupos form = new FRMGrupos();
+            mostrarForm(form);
+        }
     }
 }
