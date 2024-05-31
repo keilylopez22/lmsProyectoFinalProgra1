@@ -91,7 +91,8 @@ namespace lmsProyectoFinal
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            FRMProfesores from = new FRMProfesores();
+            mostrarForm(from);
         }
 
         private void button6_Click(object sender, EventArgs e)

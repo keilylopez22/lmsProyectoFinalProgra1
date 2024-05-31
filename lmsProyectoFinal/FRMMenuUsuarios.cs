@@ -83,7 +83,8 @@ namespace lmsProyectoFinal
         }
         private void btnListarProfesores_Click(object sender, EventArgs e)
         {
-            
+            FRMProfesores form = new FRMProfesores();
+            mostrarForm(form);  
         }
         private void btnListarCursos_Click(object sender, EventArgs e)
         {
