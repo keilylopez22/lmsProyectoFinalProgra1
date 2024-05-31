@@ -30,6 +30,10 @@ namespace lmsProyectoFinal
             {
                 if (usuario.Rol == "administrador")
                 {
+                    //
+                    FRMBienvenida  bienvenida = new FRMBienvenida();
+                    bienvenida.ShowDialog();
+                    //
                     FRMMenuAdmin form = new FRMMenuAdmin();
                     form.usuario = usuario;
                     form.Owner = this;
@@ -37,6 +41,10 @@ namespace lmsProyectoFinal
                 }
                 else
                 {
+                    //
+                    FRMBienvenida bienvenida = new FRMBienvenida();
+                    bienvenida.ShowDialog();
+                    //
                     FRMMenuUsuarios form = new FRMMenuUsuarios();
                     form.usuario = usuario;
                     form.Owner = this;  

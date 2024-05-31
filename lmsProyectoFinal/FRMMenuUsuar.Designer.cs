@@ -33,6 +33,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlSubMenu = new System.Windows.Forms.Panel();
             this.pnlSubMenuInformes = new System.Windows.Forms.Panel();
+            this.btnForos = new System.Windows.Forms.Button();
             this.btnCalificaciones = new System.Windows.Forms.Button();
             this.btnInformes = new System.Windows.Forms.Button();
             this.pnlSubMenuCursos = new System.Windows.Forms.Panel();
@@ -52,7 +53,6 @@
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnForos = new System.Windows.Forms.Button();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlSubMenu.SuspendLayout();
@@ -75,6 +75,7 @@
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Size = new System.Drawing.Size(1241, 663);
             this.pnlContenedor.TabIndex = 0;
+            this.pnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContenedor_Paint);
             // 
             // pictureBox2
             // 
@@ -115,6 +116,18 @@
             this.pnlSubMenuInformes.Name = "pnlSubMenuInformes";
             this.pnlSubMenuInformes.Size = new System.Drawing.Size(200, 62);
             this.pnlSubMenuInformes.TabIndex = 10;
+            // 
+            // btnForos
+            // 
+            this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForos.Location = new System.Drawing.Point(0, 39);
+            this.btnForos.Name = "btnForos";
+            this.btnForos.Size = new System.Drawing.Size(200, 39);
+            this.btnForos.TabIndex = 1;
+            this.btnForos.Text = "Foros";
+            this.btnForos.UseVisualStyleBackColor = true;
+            this.btnForos.Click += new System.EventHandler(this.btnForos_Click);
             // 
             // btnCalificaciones
             // 
@@ -335,18 +348,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnForos
-            // 
-            this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForos.Location = new System.Drawing.Point(0, 39);
-            this.btnForos.Name = "btnForos";
-            this.btnForos.Size = new System.Drawing.Size(200, 39);
-            this.btnForos.TabIndex = 1;
-            this.btnForos.Text = "Foros";
-            this.btnForos.UseVisualStyleBackColor = true;
-            this.btnForos.Click += new System.EventHandler(this.btnForos_Click);
             // 
             // FRMMenuUsuar
             // 
