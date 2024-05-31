@@ -56,10 +56,12 @@ namespace lmsProyectoFinal
                         Nombre = (string)reader["Nombre"],
                         Email = (string)reader["Email"],
                         Contrasenia = (string)reader["Contrasenia"],
-                        Rol = (string)reader["Rol"]
+                        Rol = (string)reader["Rol"],
+                        Imagen =  !reader.IsDBNull(5) ? (byte[])reader["image"] : new byte[0],
                     };
                 }
             }
+            //con esta clase estatica podemos mandar a llamar a usuarios desde cualquier pantalla
             Sesion.getInstance().Usuario = usuario;
             return usuario;
         }
@@ -68,13 +70,14 @@ namespace lmsProyectoFinal
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                string query = "UPDATE Usuarios SET Nombre = @Nombre, Email = @Email, Contrasenia = @Contrasenia, Rol = @Rol WHERE Id = @Id";
+                string query = "UPDATE Usuarios SET Nombre = @Nombre, Email = @Email, Contrasenia = @Contrasenia, Rol = @Rol  ,image= @image  WHERE Id = @Id";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Nombre", usuario.Nombre);
                 command.Parameters.AddWithValue("@Email", usuario.Email);
                 command.Parameters.AddWithValue("@Contrasenia", usuario.Contrasenia);
                 command.Parameters.AddWithValue("@Rol", usuario.Rol);
                 command.Parameters.AddWithValue("@Id", usuario.Id);
+                command.Parameters.AddWithValue("@image", usuario.Imagen);
                 connection.Open();
                 command.ExecuteNonQuery();
             }

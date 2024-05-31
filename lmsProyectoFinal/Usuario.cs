@@ -14,6 +14,7 @@ namespace lmsProyectoFinal
         public string Email { get; set; }
         public string Contrasenia { get; set; }
         public string Rol { get; set; }
+        public byte[] Imagen { get; set; }    
     }
 
     // Estudiante.cs
