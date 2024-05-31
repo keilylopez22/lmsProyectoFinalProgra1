@@ -397,6 +397,18 @@
             this.btnForos.UseVisualStyleBackColor = true;
             this.btnForos.Click += new System.EventHandler(this.btnForos_Click);
             // 
+            // btnForos
+            // 
+            this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForos.Location = new System.Drawing.Point(0, 36);
+            this.btnForos.Name = "btnForos";
+            this.btnForos.Size = new System.Drawing.Size(265, 36);
+            this.btnForos.TabIndex = 1;
+            this.btnForos.Text = "Foros";
+            this.btnForos.UseVisualStyleBackColor = true;
+            this.btnForos.Click += new System.EventHandler(this.btnForos_Click);
+            // 
             // FRMMenuUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
