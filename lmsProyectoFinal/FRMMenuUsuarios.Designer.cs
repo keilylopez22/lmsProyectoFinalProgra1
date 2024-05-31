@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMMenuUsuarios));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
@@ -351,6 +352,7 @@
             this.ClientSize = new System.Drawing.Size(1338, 786);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRMMenuUsuarios";
             this.Text = "Estudiantes";
             this.pnlLogo.ResumeLayout(false);
