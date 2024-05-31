@@ -58,7 +58,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlInputs = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             this.pnlInputs.SuspendLayout();
             this.SuspendLayout();
             // 
