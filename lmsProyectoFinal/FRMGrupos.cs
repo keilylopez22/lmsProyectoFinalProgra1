@@ -119,6 +119,10 @@ namespace lmsProyectoFinal
                 MessageBox.Show("Estudiante agregado al grupo");
                 listarEstudiantesGrupo(grupoSeleccionado.Id);
             }
+            else
+            {
+                MessageBox.Show("Seleccione un grupo");
+            }
             
         }
     }
