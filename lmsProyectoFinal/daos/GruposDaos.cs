@@ -110,7 +110,7 @@ namespace lmsProyectoFinal.daos
     // Data Access Object para 'GrupoEstudiantes'
     public class GrupoEstudiantesDAO
     {
-        private readonly string connectionString;
+        private readonly string connectionString = Constantes.connectionString;
 
         public GrupoEstudiantesDAO()
         {
