@@ -356,7 +356,7 @@
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.IndianRed;
+            this.pnlMenu.BackColor = System.Drawing.Color.DeepPink;
             this.pnlMenu.Controls.Add(this.pnlInformes);
             this.pnlMenu.Controls.Add(this.btnInformes);
             this.pnlMenu.Controls.Add(this.pnlSubMenuCursos);
