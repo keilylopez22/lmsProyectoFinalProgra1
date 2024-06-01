@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMProfesores));
             this.dgvProfesores = new System.Windows.Forms.DataGridView();
             this.dtPckInscripcion = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.pnlInputs = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfesores)).BeginInit();
+            this.pnlInputs.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvProfesores
@@ -51,7 +53,9 @@
             this.dgvProfesores.AllowUserToAddRows = false;
             this.dgvProfesores.AllowUserToDeleteRows = false;
             this.dgvProfesores.AllowUserToOrderColumns = true;
+            this.dgvProfesores.BackgroundColor = System.Drawing.Color.DeepPink;
             this.dgvProfesores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProfesores.GridColor = System.Drawing.Color.DeepPink;
             this.dgvProfesores.Location = new System.Drawing.Point(57, 277);
             this.dgvProfesores.Name = "dgvProfesores";
             this.dgvProfesores.ReadOnly = true;
@@ -63,18 +67,19 @@
             // 
             // dtPckInscripcion
             // 
+            this.dtPckInscripcion.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtPckInscripcion.Location = new System.Drawing.Point(57, 156);
             this.dtPckInscripcion.Name = "dtPckInscripcion";
-            this.dtPckInscripcion.Size = new System.Drawing.Size(200, 22);
+            this.dtPckInscripcion.Size = new System.Drawing.Size(313, 28);
             this.dtPckInscripcion.TabIndex = 48;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(53, 133);
+            this.label5.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(53, 131);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 20);
+            this.label5.Size = new System.Drawing.Size(154, 22);
             this.label5.TabIndex = 47;
             this.label5.Text = "Fecha Inscripcion";
             // 
@@ -94,7 +99,7 @@
             // 
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Location = new System.Drawing.Point(390, 197);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(122, 37);
@@ -105,17 +110,18 @@
             // 
             // cmbUsuario
             // 
+            this.cmbUsuario.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbUsuario.FormattingEnabled = true;
             this.cmbUsuario.Location = new System.Drawing.Point(57, 93);
             this.cmbUsuario.Name = "cmbUsuario";
-            this.cmbUsuario.Size = new System.Drawing.Size(366, 24);
+            this.cmbUsuario.Size = new System.Drawing.Size(366, 25);
             this.cmbUsuario.TabIndex = 44;
             // 
             // btnCancelar
             // 
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(671, 197);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(122, 37);
@@ -128,10 +134,10 @@
             // 
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Location = new System.Drawing.Point(86, 197);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(101, 37);
+            this.btnGuardar.Size = new System.Drawing.Size(171, 37);
             this.btnGuardar.TabIndex = 42;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -140,30 +146,30 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(53, 67);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 20);
+            this.label4.Size = new System.Drawing.Size(73, 22);
             this.label4.TabIndex = 41;
             this.label4.Text = "Usuario";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(451, 67);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 20);
+            this.label3.Size = new System.Drawing.Size(49, 22);
             this.label3.TabIndex = 40;
             this.label3.Text = "Sexo";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(451, 9);
+            this.label1.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(451, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 20);
+            this.label1.Size = new System.Drawing.Size(86, 22);
             this.label1.TabIndex = 39;
             this.label1.Text = "Direccion";
             // 
@@ -178,10 +184,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(53, 9);
+            this.label2.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(53, 7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.Size = new System.Drawing.Size(84, 22);
             this.label2.TabIndex = 37;
             this.label2.Text = "Nombre:";
             // 
@@ -195,11 +201,7 @@
             // 
             // pnlInputs
             // 
-            this.pnlInputs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlInputs.Location = new System.Drawing.Point(0, 0);
-            this.pnlInputs.Name = "pnlInputs";
-            this.pnlInputs.Size = new System.Drawing.Size(1001, 244);
-            this.pnlInputs.TabIndex = 49;
+            this.pnlInputs.BackColor = System.Drawing.Color.DeepPink;
             this.pnlInputs.Controls.Add(this.dtPckInscripcion);
             this.pnlInputs.Controls.Add(this.label5);
             this.pnlInputs.Controls.Add(this.cmbSexo);
@@ -213,21 +215,27 @@
             this.pnlInputs.Controls.Add(this.txtDireccion);
             this.pnlInputs.Controls.Add(this.label2);
             this.pnlInputs.Controls.Add(this.txtNombre);
+            this.pnlInputs.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlInputs.Location = new System.Drawing.Point(0, 0);
+            this.pnlInputs.Name = "pnlInputs";
+            this.pnlInputs.Size = new System.Drawing.Size(1001, 244);
+            this.pnlInputs.TabIndex = 49;
             // 
             // FRMProfesores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.HotPink;
             this.ClientSize = new System.Drawing.Size(1001, 450);
             this.Controls.Add(this.pnlInputs);
-            
             this.Controls.Add(this.dgvProfesores);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRMProfesores";
             this.Text = "FRMProfesores";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfesores)).EndInit();
+            this.pnlInputs.ResumeLayout(false);
+            this.pnlInputs.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

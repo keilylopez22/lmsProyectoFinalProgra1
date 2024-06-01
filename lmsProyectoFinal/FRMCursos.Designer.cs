@@ -52,14 +52,14 @@
             this.dgvCursos.AllowUserToAddRows = false;
             this.dgvCursos.AllowUserToDeleteRows = false;
             this.dgvCursos.AllowUserToOrderColumns = true;
-            this.dgvCursos.BackgroundColor = System.Drawing.SystemColors.ScrollBar;
+            this.dgvCursos.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.dgvCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCursos.Location = new System.Drawing.Point(95, 363);
             this.dgvCursos.Name = "dgvCursos";
             this.dgvCursos.ReadOnly = true;
             this.dgvCursos.RowHeadersWidth = 51;
             this.dgvCursos.RowTemplate.Height = 24;
-            this.dgvCursos.Size = new System.Drawing.Size(857, 150);
+            this.dgvCursos.Size = new System.Drawing.Size(756, 150);
             this.dgvCursos.TabIndex = 0;
             this.dgvCursos.SelectionChanged += new System.EventHandler(this.dgvCursos_SelectionChanged);
             // 
@@ -84,10 +84,10 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("MV Boli", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(95, 165);
+            this.txtDescripcion.Location = new System.Drawing.Point(95, 171);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(683, 117);
+            this.txtDescripcion.Size = new System.Drawing.Size(756, 117);
             this.txtDescripcion.TabIndex = 23;
             // 
             // Descripcion
@@ -185,7 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(1188, 543);
             this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.btnCancelar);

@@ -57,7 +57,7 @@
             this.dgvCalificaciones.AllowUserToAddRows = false;
             this.dgvCalificaciones.AllowUserToDeleteRows = false;
             this.dgvCalificaciones.AllowUserToOrderColumns = true;
-            this.dgvCalificaciones.BackgroundColor = System.Drawing.Color.RosyBrown;
+            this.dgvCalificaciones.BackgroundColor = System.Drawing.Color.HotPink;
             this.dgvCalificaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCalificaciones.Location = new System.Drawing.Point(38, 272);
             this.dgvCalificaciones.Name = "dgvCalificaciones";
@@ -90,7 +90,7 @@
             // 
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Location = new System.Drawing.Point(548, 220);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(101, 37);
@@ -102,20 +102,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("MV Boli", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(43, 197);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 22);
+            this.label1.Size = new System.Drawing.Size(86, 29);
             this.label1.TabIndex = 4;
             this.label1.Text = "Curso:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MV Boli", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(288, 197);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 22);
+            this.label2.Size = new System.Drawing.Size(147, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "Estudiante:";
             // 
@@ -168,8 +168,8 @@
             // 
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(229, 118);
+            this.btnGuardar.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(176, 118);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(101, 37);
             this.btnGuardar.TabIndex = 14;
@@ -181,8 +181,8 @@
             // 
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(527, 118);
+            this.btnCancelar.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(465, 118);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(122, 37);
             this.btnCancelar.TabIndex = 15;
@@ -211,6 +211,7 @@
             // numNota
             // 
             this.numNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numNota.ForeColor = System.Drawing.Color.DeepPink;
             this.numNota.Location = new System.Drawing.Point(841, 33);
             this.numNota.Name = "numNota";
             this.numNota.Size = new System.Drawing.Size(159, 74);
@@ -239,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(1351, 450);
             this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.numNota);
@@ -258,6 +259,7 @@
             this.Controls.Add(this.cmbEstudiante);
             this.Controls.Add(this.cmbCursos);
             this.Controls.Add(this.dgvCalificaciones);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRMCalificaciones";
             this.Text = "FRMCalificaciones";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCalificaciones)).EndInit();

@@ -17,6 +17,7 @@ namespace lmsProyectoFinal
         public FRMMenuUsuarios()
         {
             InitializeComponent();
+            OcultarSubMenu();
 
         }
 

@@ -66,7 +66,7 @@
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.IndianRed;
+            this.pnlMenu.BackColor = System.Drawing.Color.HotPink;
             this.pnlMenu.Controls.Add(this.pnlInformes);
             this.pnlMenu.Controls.Add(this.btnInformes);
             this.pnlMenu.Controls.Add(this.pnlSubMenuCursos);
@@ -81,11 +81,12 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(265, 836);
+            this.pnlMenu.Size = new System.Drawing.Size(265, 927);
             this.pnlMenu.TabIndex = 1;
             // 
             // pnlInformes
             // 
+            this.pnlInformes.BackColor = System.Drawing.Color.HotPink;
             this.pnlInformes.Controls.Add(this.btnCalificaciones);
             this.pnlInformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlInformes.Location = new System.Drawing.Point(0, 791);
@@ -111,10 +112,11 @@
             // 
             // btnInformes
             // 
+            this.btnInformes.BackColor = System.Drawing.Color.DeepPink;
             this.btnInformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInformes.FlatAppearance.BorderSize = 0;
             this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInformes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInformes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformes.Location = new System.Drawing.Point(0, 741);
             this.btnInformes.Name = "btnInformes";
             this.btnInformes.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
@@ -122,7 +124,7 @@
             this.btnInformes.TabIndex = 5;
             this.btnInformes.Text = "Informes";
             this.btnInformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInformes.UseVisualStyleBackColor = true;
+            this.btnInformes.UseVisualStyleBackColor = false;
             this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
             // pnlSubMenuCursos
@@ -138,6 +140,7 @@
             // 
             // btnForos
             // 
+            this.btnForos.BackColor = System.Drawing.Color.HotPink;
             this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnForos.FlatAppearance.BorderSize = 0;
             this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -145,14 +148,16 @@
             this.btnForos.Location = new System.Drawing.Point(0, 66);
             this.btnForos.Name = "btnForos";
             this.btnForos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnForos.Size = new System.Drawing.Size(265, 33);
-            this.btnForos.TabIndex = 3;
+            this.btnForos.Size = new System.Drawing.Size(265, 36);
+            this.btnForos.TabIndex = 1;
             this.btnForos.Text = "Foros";
             this.btnForos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnForos.UseVisualStyleBackColor = true;
+            this.btnForos.UseVisualStyleBackColor = false;
+            this.btnForos.Click += new System.EventHandler(this.btnForos_Click);
             // 
             // btnActividades
             // 
+            this.btnActividades.BackColor = System.Drawing.Color.HotPink;
             this.btnActividades.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnActividades.FlatAppearance.BorderSize = 0;
             this.btnActividades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -164,11 +169,12 @@
             this.btnActividades.TabIndex = 2;
             this.btnActividades.Text = "Actividades";
             this.btnActividades.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActividades.UseVisualStyleBackColor = true;
+            this.btnActividades.UseVisualStyleBackColor = false;
             this.btnActividades.Click += new System.EventHandler(this.btnActividades_Click);
             // 
             // btnListarCursos
             // 
+            this.btnListarCursos.BackColor = System.Drawing.Color.HotPink;
             this.btnListarCursos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnListarCursos.FlatAppearance.BorderSize = 0;
             this.btnListarCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -180,15 +186,16 @@
             this.btnListarCursos.TabIndex = 0;
             this.btnListarCursos.Text = "Listar";
             this.btnListarCursos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListarCursos.UseVisualStyleBackColor = true;
+            this.btnListarCursos.UseVisualStyleBackColor = false;
             this.btnListarCursos.Click += new System.EventHandler(this.btnListarCursos_Click);
             // 
             // btnCursos
             // 
+            this.btnCursos.BackColor = System.Drawing.Color.DeepPink;
             this.btnCursos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCursos.FlatAppearance.BorderSize = 0;
             this.btnCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCursos.Location = new System.Drawing.Point(0, 591);
             this.btnCursos.Name = "btnCursos";
             this.btnCursos.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
@@ -196,11 +203,12 @@
             this.btnCursos.TabIndex = 4;
             this.btnCursos.Text = "Cursos";
             this.btnCursos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCursos.UseVisualStyleBackColor = true;
+            this.btnCursos.UseVisualStyleBackColor = false;
             this.btnCursos.Click += new System.EventHandler(this.btnCursos_Click);
             // 
             // pnlSubMenuProfesores
             // 
+            this.pnlSubMenuProfesores.BackColor = System.Drawing.Color.HotPink;
             this.pnlSubMenuProfesores.Controls.Add(this.btnAsigProfesor);
             this.pnlSubMenuProfesores.Controls.Add(this.btnListarProfesores);
             this.pnlSubMenuProfesores.Dock = System.Windows.Forms.DockStyle.Top;
@@ -243,10 +251,11 @@
             // 
             // btnProfesores
             // 
+            this.btnProfesores.BackColor = System.Drawing.Color.DeepPink;
             this.btnProfesores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProfesores.FlatAppearance.BorderSize = 0;
             this.btnProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfesores.Location = new System.Drawing.Point(0, 441);
             this.btnProfesores.Name = "btnProfesores";
             this.btnProfesores.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
@@ -254,11 +263,12 @@
             this.btnProfesores.TabIndex = 3;
             this.btnProfesores.Text = "Profesores";
             this.btnProfesores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfesores.UseVisualStyleBackColor = true;
+            this.btnProfesores.UseVisualStyleBackColor = false;
             this.btnProfesores.Click += new System.EventHandler(this.btnProfesores_Click);
             // 
             // pnlSubMenuEstudiantes
             // 
+            this.pnlSubMenuEstudiantes.BackColor = System.Drawing.Color.HotPink;
             this.pnlSubMenuEstudiantes.Controls.Add(this.btnAsignacion);
             this.pnlSubMenuEstudiantes.Controls.Add(this.btnListarEstudiantes);
             this.pnlSubMenuEstudiantes.Dock = System.Windows.Forms.DockStyle.Top;
@@ -301,10 +311,11 @@
             // 
             // btnEstudiantes
             // 
+            this.btnEstudiantes.BackColor = System.Drawing.Color.DeepPink;
             this.btnEstudiantes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEstudiantes.FlatAppearance.BorderSize = 0;
             this.btnEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstudiantes.Location = new System.Drawing.Point(0, 291);
             this.btnEstudiantes.Name = "btnEstudiantes";
             this.btnEstudiantes.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
@@ -312,11 +323,12 @@
             this.btnEstudiantes.TabIndex = 2;
             this.btnEstudiantes.Text = "Estudiantes";
             this.btnEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstudiantes.UseVisualStyleBackColor = true;
+            this.btnEstudiantes.UseVisualStyleBackColor = false;
             this.btnEstudiantes.Click += new System.EventHandler(this.btnEstudiantes_Click);
             // 
             // pnlSubMenuUsuarios
             // 
+            this.pnlSubMenuUsuarios.BackColor = System.Drawing.Color.HotPink;
             this.pnlSubMenuUsuarios.Controls.Add(this.btnListarUsuarios);
             this.pnlSubMenuUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSubMenuUsuarios.Location = new System.Drawing.Point(0, 191);
@@ -342,10 +354,11 @@
             // 
             // btnUsuarios
             // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.DeepPink;
             this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUsuarios.FlatAppearance.BorderSize = 0;
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuarios.Location = new System.Drawing.Point(0, 141);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
@@ -353,7 +366,7 @@
             this.btnUsuarios.TabIndex = 1;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // pnlLogo
@@ -367,6 +380,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.HotPink;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::lmsProyectoFinal.Properties.Resources.K_icon;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -378,42 +392,18 @@
             // 
             // pnlContenedor
             // 
-            this.pnlContenedor.BackColor = System.Drawing.Color.RosyBrown;
+            this.pnlContenedor.BackColor = System.Drawing.Color.DeepPink;
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(265, 0);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(713, 836);
+            this.pnlContenedor.Size = new System.Drawing.Size(656, 927);
             this.pnlContenedor.TabIndex = 2;
-            // 
-            // btnForos
-            // 
-            this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForos.Location = new System.Drawing.Point(0, 36);
-            this.btnForos.Name = "btnForos";
-            this.btnForos.Size = new System.Drawing.Size(265, 36);
-            this.btnForos.TabIndex = 1;
-            this.btnForos.Text = "Foros";
-            this.btnForos.UseVisualStyleBackColor = true;
-            this.btnForos.Click += new System.EventHandler(this.btnForos_Click);
-            // 
-            // btnForos
-            // 
-            this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForos.Location = new System.Drawing.Point(0, 36);
-            this.btnForos.Name = "btnForos";
-            this.btnForos.Size = new System.Drawing.Size(265, 36);
-            this.btnForos.TabIndex = 1;
-            this.btnForos.Text = "Foros";
-            this.btnForos.UseVisualStyleBackColor = true;
-            this.btnForos.Click += new System.EventHandler(this.btnForos_Click);
             // 
             // FRMMenuUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 836);
+            this.ClientSize = new System.Drawing.Size(921, 927);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

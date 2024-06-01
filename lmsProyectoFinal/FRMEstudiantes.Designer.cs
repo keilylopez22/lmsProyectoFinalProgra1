@@ -45,19 +45,9 @@
             this.dtPckInscripcion = new System.Windows.Forms.DateTimePicker();
             this.pctbxFoto = new System.Windows.Forms.PictureBox();
             this.lbFoto = new System.Windows.Forms.Label();
-            this.pnllogos = new System.Windows.Forms.Panel();
-            this.pnllogo1 = new System.Windows.Forms.Panel();
-            this.pnllogo2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pnlInputs = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbxFoto)).BeginInit();
-            this.pnllogos.SuspendLayout();
-            this.pnllogo1.SuspendLayout();
-            this.pnllogo2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.pnlInputs = new System.Windows.Forms.Panel();
             this.pnlInputs.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +56,7 @@
             this.dgvEstudiantes.AllowUserToAddRows = false;
             this.dgvEstudiantes.AllowUserToDeleteRows = false;
             this.dgvEstudiantes.AllowUserToOrderColumns = true;
-            this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.HotPink;
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEstudiantes.Location = new System.Drawing.Point(64, 290);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
@@ -82,7 +72,7 @@
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(380, 223);
+            this.btnEliminar.Location = new System.Drawing.Point(417, 211);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(214, 45);
             this.btnEliminar.TabIndex = 32;
@@ -103,7 +93,7 @@
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(609, 223);
+            this.btnCancelar.Location = new System.Drawing.Point(647, 211);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(215, 45);
             this.btnCancelar.TabIndex = 30;
@@ -116,7 +106,7 @@
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(107, 231);
+            this.btnGuardar.Location = new System.Drawing.Point(117, 219);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(231, 37);
             this.btnGuardar.TabIndex = 29;
@@ -127,7 +117,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(66, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 26);
@@ -137,7 +127,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(473, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 26);
@@ -147,8 +137,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(464, 17);
+            this.label1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(464, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 26);
             this.label1.TabIndex = 25;
@@ -165,7 +155,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(75, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 26);
@@ -196,10 +186,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(67, 147);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 20);
+            this.label5.Size = new System.Drawing.Size(185, 26);
             this.label5.TabIndex = 34;
             this.label5.Text = "Fecha Inscripcion";
             // 
@@ -231,98 +221,36 @@
             this.lbFoto.Text = "Foto no disponible";
             this.lbFoto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnllogos
-            // 
-            this.pnllogos.Controls.Add(this.pnllogo2);
-            this.pnllogos.Controls.Add(this.pnllogo1);
-            this.pnllogos.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnllogos.Location = new System.Drawing.Point(1124, 0);
-            this.pnllogos.Name = "pnllogos";
-            this.pnllogos.Size = new System.Drawing.Size(200, 480);
-            this.pnllogos.TabIndex = 38;
-            // 
-            // pnllogo1
-            // 
-            this.pnllogo1.Controls.Add(this.pictureBox1);
-            this.pnllogo1.Location = new System.Drawing.Point(0, 0);
-            this.pnllogo1.Name = "pnllogo1";
-            this.pnllogo1.Size = new System.Drawing.Size(200, 236);
-            this.pnllogo1.TabIndex = 0;
-            // 
-            // pnllogo2
-            // 
-            this.pnllogo2.Controls.Add(this.pictureBox2);
-            this.pnllogo2.Location = new System.Drawing.Point(0, 242);
-            this.pnllogo2.Name = "pnllogo2";
-            this.pnllogo2.Size = new System.Drawing.Size(200, 235);
-            this.pnllogo2.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 236);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 235);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // pnlInputs
             // 
-            this.pnlInputs.Controls.Add(this.dtPckInscripcion);
-            this.pnlInputs.Controls.Add(this.label5);
-            this.pnlInputs.Controls.Add(this.cmbSexo);
-            this.pnlInputs.Controls.Add(this.btnEliminar);
-            this.pnlInputs.Controls.Add(this.cmbUsuario);
+            this.pnlInputs.BackColor = System.Drawing.Color.DeepPink;
             this.pnlInputs.Controls.Add(this.btnCancelar);
+            this.pnlInputs.Controls.Add(this.btnEliminar);
             this.pnlInputs.Controls.Add(this.btnGuardar);
-            this.pnlInputs.Controls.Add(this.label4);
-            this.pnlInputs.Controls.Add(this.label3);
             this.pnlInputs.Controls.Add(this.label1);
-            this.pnlInputs.Controls.Add(this.txtDireccion);
-            this.pnlInputs.Controls.Add(this.label2);
-            this.pnlInputs.Controls.Add(this.txtNombre);
             this.pnlInputs.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlInputs.Location = new System.Drawing.Point(0, 0);
             this.pnlInputs.Name = "pnlInputs";
-            this.pnlInputs.Size = new System.Drawing.Size(941, 259);
+            this.pnlInputs.Size = new System.Drawing.Size(1256, 259);
             this.pnlInputs.TabIndex = 36;
             // 
             // FRMEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1324, 480);
-            this.Controls.Add(this.pnllogos);
+            this.BackColor = System.Drawing.Color.DeepPink;
+            this.ClientSize = new System.Drawing.Size(1256, 480);
             this.Controls.Add(this.lbFoto);
             this.Controls.Add(this.pctbxFoto);
             this.Controls.Add(this.dtPckInscripcion);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbSexo);
-            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.cmbUsuario);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(941, 480);
             this.Controls.Add(this.pnlInputs);
             this.Controls.Add(this.dgvEstudiantes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -331,14 +259,10 @@
             this.Load += new System.EventHandler(this.FRMEstudiantes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbxFoto)).EndInit();
-            this.pnllogos.ResumeLayout(false);
-            this.pnllogo1.ResumeLayout(false);
-            this.pnllogo2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlInputs.ResumeLayout(false);
             this.pnlInputs.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -360,11 +284,6 @@
         private System.Windows.Forms.DateTimePicker dtPckInscripcion;
         private System.Windows.Forms.PictureBox pctbxFoto;
         private System.Windows.Forms.Label lbFoto;
-        private System.Windows.Forms.Panel pnllogos;
-        private System.Windows.Forms.Panel pnllogo2;
-        private System.Windows.Forms.Panel pnllogo1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlInputs;
     }
 }

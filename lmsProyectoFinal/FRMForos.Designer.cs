@@ -73,7 +73,7 @@
             this.dgvForos.AllowUserToAddRows = false;
             this.dgvForos.AllowUserToDeleteRows = false;
             this.dgvForos.AllowUserToOrderColumns = true;
-            this.dgvForos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dgvForos.BackgroundColor = System.Drawing.Color.HotPink;
             this.dgvForos.CausesValidation = false;
             this.dgvForos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvForos.Location = new System.Drawing.Point(66, 338);
@@ -118,7 +118,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtDescripcion.BackColor = System.Drawing.Color.HotPink;
             this.txtDescripcion.Font = new System.Drawing.Font("MV Boli", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(66, 154);
             this.txtDescripcion.Multiline = true;
@@ -216,7 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(1235, 531);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRespuestas);

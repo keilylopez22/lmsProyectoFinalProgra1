@@ -133,3 +133,5 @@ create table grupo_estudiantes (
 	`estudiante_id` int(11),
 	PRIMARY KEY (`id`)
 );
+
+alter table usuarios add image longblob ;

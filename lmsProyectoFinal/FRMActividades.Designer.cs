@@ -52,7 +52,7 @@
             this.dgvActividades.AllowUserToAddRows = false;
             this.dgvActividades.AllowUserToDeleteRows = false;
             this.dgvActividades.AllowUserToOrderColumns = true;
-            this.dgvActividades.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.dgvActividades.BackgroundColor = System.Drawing.Color.HotPink;
             this.dgvActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvActividades.Location = new System.Drawing.Point(50, 337);
             this.dgvActividades.Name = "dgvActividades";
@@ -112,7 +112,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtDescripcion.BackColor = System.Drawing.Color.HotPink;
             this.txtDescripcion.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(50, 171);
             this.txtDescripcion.Multiline = true;
@@ -188,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(1089, 510);
             this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.label3);
@@ -202,6 +202,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbCursos);
             this.Controls.Add(this.dgvActividades);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRMActividades";
             this.Text = "FRMActividades";
             ((System.ComponentModel.ISupportInitialize)(this.dgvActividades)).EndInit();

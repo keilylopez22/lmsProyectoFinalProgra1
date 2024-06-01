@@ -48,7 +48,7 @@
             // 
             this.dgvAsignacion.AllowUserToAddRows = false;
             this.dgvAsignacion.AllowUserToDeleteRows = false;
-            this.dgvAsignacion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dgvAsignacion.BackgroundColor = System.Drawing.Color.HotPink;
             this.dgvAsignacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAsignacion.Location = new System.Drawing.Point(32, 267);
             this.dgvAsignacion.Name = "dgvAsignacion";
@@ -159,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(1065, 450);
             this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.btnEliminar);
