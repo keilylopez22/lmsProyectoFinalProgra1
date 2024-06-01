@@ -13,6 +13,6 @@ namespace lmsProyectoFinal
         public static string connectionString = "server=localhost;" +
             "user=root;" +
             "password=;" +
-            "database=klms;";
+            "database=lms;";
     }
 }
