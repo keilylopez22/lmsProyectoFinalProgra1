@@ -42,6 +42,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnRespuestas = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvForos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -189,12 +190,24 @@
             this.btnRespuestas.UseVisualStyleBackColor = true;
             this.btnRespuestas.Click += new System.EventHandler(this.btnRespuestas_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(971, 14);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 26);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Wixman";
+            // 
             // FRMForos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1235, 531);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnRespuestas);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
@@ -232,5 +245,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnRespuestas;
+        private System.Windows.Forms.Label label7;
     }
 }

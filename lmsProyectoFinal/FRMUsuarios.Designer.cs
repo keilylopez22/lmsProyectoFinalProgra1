@@ -41,6 +41,7 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.cmbRol = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,12 +176,24 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(941, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 26);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Wixman";
+            // 
             // FRMUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1474, 501);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.cmbRol);
             this.Controls.Add(this.btnCancelar);
@@ -217,5 +230,6 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.ComboBox cmbRol;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Label label7;
     }
 }

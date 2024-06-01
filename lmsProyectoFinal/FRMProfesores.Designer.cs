@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.pnlInputs = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfesores)).BeginInit();
             this.pnlInputs.SuspendLayout();
             this.SuspendLayout();
@@ -202,6 +203,7 @@
             // pnlInputs
             // 
             this.pnlInputs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.pnlInputs.Controls.Add(this.label7);
             this.pnlInputs.Controls.Add(this.dtPckInscripcion);
             this.pnlInputs.Controls.Add(this.label5);
             this.pnlInputs.Controls.Add(this.cmbSexo);
@@ -220,6 +222,17 @@
             this.pnlInputs.Name = "pnlInputs";
             this.pnlInputs.Size = new System.Drawing.Size(1001, 244);
             this.pnlInputs.TabIndex = 49;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(882, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 26);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "Wixman";
             // 
             // FRMProfesores
             // 
@@ -256,5 +269,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Panel pnlInputs;
+        private System.Windows.Forms.Label label7;
     }
 }

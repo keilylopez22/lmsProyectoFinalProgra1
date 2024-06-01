@@ -47,6 +47,7 @@
             this.numNota = new System.Windows.Forms.TextBox();
             this.pnllogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCalificaciones)).BeginInit();
             this.pnllogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -236,12 +237,24 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(1122, 293);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 26);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Wixman";
+            // 
             // FRMCalificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1351, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.numNota);
             this.Controls.Add(this.label5);
@@ -290,5 +303,6 @@
         private System.Windows.Forms.TextBox numNota;
         private System.Windows.Forms.Panel pnllogo;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label7;
     }
 }

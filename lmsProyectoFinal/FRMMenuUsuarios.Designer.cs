@@ -54,10 +54,8 @@
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlMenu.SuspendLayout();
             this.pnlInformes.SuspendLayout();
             this.pnlSubMenuCursos.SuspendLayout();
@@ -67,9 +65,7 @@
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlContenedor.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -401,29 +397,18 @@
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pnlContenedor.Controls.Add(this.panel1);
+            this.pnlContenedor.Controls.Add(this.label1);
+            this.pnlContenedor.Controls.Add(this.pictureBox2);
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(265, 0);
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Size = new System.Drawing.Size(903, 927);
             this.pnlContenedor.TabIndex = 2;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(903, 141);
-            this.panel1.TabIndex = 0;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(775, 53);
+            this.pictureBox2.Location = new System.Drawing.Point(762, 24);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 73);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -434,22 +419,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(679, 76);
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(635, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Wixman";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 53);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(103, 88);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
             // 
             // FRMMenuUsuarios
             // 
@@ -470,10 +445,8 @@
             this.pnlLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlContenedor.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -504,9 +477,7 @@
         private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlContenedor;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

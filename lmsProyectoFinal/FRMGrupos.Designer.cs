@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cmbEstudiantes = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrupos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             this.SuspendLayout();
@@ -154,12 +155,24 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(796, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 26);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Wixman";
+            // 
             // FRMGrupos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(948, 534);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cmbEstudiantes);
             this.Controls.Add(this.label3);
@@ -192,5 +205,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbEstudiantes;
         private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Label label7;
     }
 }

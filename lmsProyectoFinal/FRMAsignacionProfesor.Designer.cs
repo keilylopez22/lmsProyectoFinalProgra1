@@ -39,6 +39,7 @@
             this.cmbCursos = new System.Windows.Forms.ComboBox();
             this.pnllogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsignacion)).BeginInit();
             this.pnllogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -156,12 +157,24 @@
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(930, 193);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 26);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Wixman";
+            // 
             // FRMAsignacionProfesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1101, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnBuscar);
@@ -171,6 +184,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbCursos);
             this.Controls.Add(this.dgvAsignacion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRMAsignacionProfesor";
             this.Text = "FRMAsignacionProfesor";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsignacion)).EndInit();
@@ -193,5 +207,6 @@
         private System.Windows.Forms.ComboBox cmbCursos;
         private System.Windows.Forms.Panel pnllogo;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label7;
     }
 }

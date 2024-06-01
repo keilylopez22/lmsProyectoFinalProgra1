@@ -39,6 +39,7 @@
             this.txtContenido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnResponder = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRespuestas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,12 +153,24 @@
             this.btnResponder.UseVisualStyleBackColor = true;
             this.btnResponder.Click += new System.EventHandler(this.btnResponder_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(959, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 26);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Wixman";
+            // 
             // FRMRespuestas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(997, 568);
+            this.ClientSize = new System.Drawing.Size(1147, 568);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnResponder);
             this.Controls.Add(this.txtContenido);
             this.Controls.Add(this.label1);
@@ -189,5 +202,6 @@
         private System.Windows.Forms.TextBox txtContenido;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnResponder;
+        private System.Windows.Forms.Label label7;
     }
 }
