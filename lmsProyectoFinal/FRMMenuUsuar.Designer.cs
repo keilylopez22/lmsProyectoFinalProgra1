@@ -67,20 +67,20 @@
             // 
             // pnlContenedor
             // 
-            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.pnlContenedor.BackColor = System.Drawing.Color.DeepPink;
             this.pnlContenedor.Controls.Add(this.pictureBox2);
             this.pnlContenedor.Controls.Add(this.pnlSubMenu);
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(0, 0);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(1241, 663);
+            this.pnlContenedor.Size = new System.Drawing.Size(818, 764);
             this.pnlContenedor.TabIndex = 0;
             this.pnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContenedor_Paint);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(970, 412);
+            this.pictureBox2.Location = new System.Drawing.Point(1075, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(259, 239);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,7 +104,7 @@
             this.pnlSubMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSubMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlSubMenu.Name = "pnlSubMenu";
-            this.pnlSubMenu.Size = new System.Drawing.Size(200, 663);
+            this.pnlSubMenu.Size = new System.Drawing.Size(200, 764);
             this.pnlSubMenu.TabIndex = 0;
             // 
             // pnlSubMenuInformes
@@ -119,6 +119,7 @@
             // 
             // btnForos
             // 
+            this.btnForos.BackColor = System.Drawing.Color.HotPink;
             this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnForos.Location = new System.Drawing.Point(0, 39);
@@ -126,11 +127,12 @@
             this.btnForos.Size = new System.Drawing.Size(200, 39);
             this.btnForos.TabIndex = 1;
             this.btnForos.Text = "Foros";
-            this.btnForos.UseVisualStyleBackColor = true;
+            this.btnForos.UseVisualStyleBackColor = false;
             this.btnForos.Click += new System.EventHandler(this.btnForos_Click);
             // 
             // btnCalificaciones
             // 
+            this.btnCalificaciones.BackColor = System.Drawing.Color.HotPink;
             this.btnCalificaciones.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCalificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalificaciones.Location = new System.Drawing.Point(0, 0);
@@ -138,24 +140,27 @@
             this.btnCalificaciones.Size = new System.Drawing.Size(200, 39);
             this.btnCalificaciones.TabIndex = 0;
             this.btnCalificaciones.Text = "Calificaciones";
-            this.btnCalificaciones.UseVisualStyleBackColor = true;
+            this.btnCalificaciones.UseVisualStyleBackColor = false;
             this.btnCalificaciones.Click += new System.EventHandler(this.btnCalificaciones_Click);
             // 
             // btnInformes
             // 
+            this.btnInformes.BackColor = System.Drawing.Color.DeepPink;
             this.btnInformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInformes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformes.Location = new System.Drawing.Point(0, 565);
             this.btnInformes.Name = "btnInformes";
             this.btnInformes.Size = new System.Drawing.Size(200, 40);
             this.btnInformes.TabIndex = 9;
             this.btnInformes.Text = "Informes";
             this.btnInformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInformes.UseVisualStyleBackColor = true;
+            this.btnInformes.UseVisualStyleBackColor = false;
             this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
             // pnlSubMenuCursos
             // 
+            this.pnlSubMenuCursos.BackColor = System.Drawing.Color.HotPink;
             this.pnlSubMenuCursos.Controls.Add(this.btnActividaes);
             this.pnlSubMenuCursos.Controls.Add(this.btnListarCursos);
             this.pnlSubMenuCursos.Dock = System.Windows.Forms.DockStyle.Top;
@@ -190,19 +195,22 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DeepPink;
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(0, 445);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 40);
             this.button1.TabIndex = 7;
             this.button1.Text = "Cursos";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnlSubMenuProfesores
             // 
+            this.pnlSubMenuProfesores.BackColor = System.Drawing.Color.HotPink;
             this.pnlSubMenuProfesores.Controls.Add(this.btnAsignarProfesores);
             this.pnlSubMenuProfesores.Controls.Add(this.btnListarProfesores);
             this.pnlSubMenuProfesores.Dock = System.Windows.Forms.DockStyle.Top;
@@ -237,19 +245,22 @@
             // 
             // btnProfresores
             // 
+            this.btnProfresores.BackColor = System.Drawing.Color.DeepPink;
             this.btnProfresores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProfresores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfresores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfresores.Location = new System.Drawing.Point(0, 326);
             this.btnProfresores.Name = "btnProfresores";
             this.btnProfresores.Size = new System.Drawing.Size(200, 39);
             this.btnProfresores.TabIndex = 5;
             this.btnProfresores.Text = "Profesores";
             this.btnProfresores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfresores.UseVisualStyleBackColor = true;
+            this.btnProfresores.UseVisualStyleBackColor = false;
             this.btnProfresores.Click += new System.EventHandler(this.btnProfresores_Click);
             // 
             // pnlSubMenuEstudiantes
             // 
+            this.pnlSubMenuEstudiantes.BackColor = System.Drawing.Color.HotPink;
             this.pnlSubMenuEstudiantes.Controls.Add(this.btnAsignarEstudiantes);
             this.pnlSubMenuEstudiantes.Controls.Add(this.btnListarEstudent);
             this.pnlSubMenuEstudiantes.Dock = System.Windows.Forms.DockStyle.Top;
@@ -284,19 +295,22 @@
             // 
             // btnEstudiantes
             // 
+            this.btnEstudiantes.BackColor = System.Drawing.Color.DeepPink;
             this.btnEstudiantes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstudiantes.Location = new System.Drawing.Point(0, 202);
             this.btnEstudiantes.Name = "btnEstudiantes";
             this.btnEstudiantes.Size = new System.Drawing.Size(200, 40);
             this.btnEstudiantes.TabIndex = 3;
             this.btnEstudiantes.Text = "Estudiantes";
             this.btnEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstudiantes.UseVisualStyleBackColor = true;
+            this.btnEstudiantes.UseVisualStyleBackColor = false;
             this.btnEstudiantes.Click += new System.EventHandler(this.btnEstudiantes_Click);
             // 
             // pnlSubMenuUsuarios
             // 
+            this.pnlSubMenuUsuarios.BackColor = System.Drawing.Color.HotPink;
             this.pnlSubMenuUsuarios.Controls.Add(this.btnListarUsuarios);
             this.pnlSubMenuUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSubMenuUsuarios.Location = new System.Drawing.Point(0, 140);
@@ -318,15 +332,17 @@
             // 
             // btnUsuarios
             // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.DeepPink;
             this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuarios.Location = new System.Drawing.Point(0, 100);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(200, 40);
             this.btnUsuarios.TabIndex = 1;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // pnlLogo
@@ -340,6 +356,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.HotPink;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -354,7 +371,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
-            this.ClientSize = new System.Drawing.Size(1241, 663);
+            this.ClientSize = new System.Drawing.Size(818, 764);
             this.Controls.Add(this.pnlContenedor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRMMenuUsuar";

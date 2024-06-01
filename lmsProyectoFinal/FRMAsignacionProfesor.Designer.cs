@@ -49,9 +49,9 @@
             this.dgvAsignacion.AllowUserToAddRows = false;
             this.dgvAsignacion.AllowUserToDeleteRows = false;
             this.dgvAsignacion.AllowUserToOrderColumns = true;
-            this.dgvAsignacion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dgvAsignacion.BackgroundColor = System.Drawing.Color.HotPink;
             this.dgvAsignacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAsignacion.Location = new System.Drawing.Point(74, 255);
+            this.dgvAsignacion.Location = new System.Drawing.Point(98, 255);
             this.dgvAsignacion.Name = "dgvAsignacion";
             this.dgvAsignacion.ReadOnly = true;
             this.dgvAsignacion.RowHeadersWidth = 51;
@@ -65,7 +65,7 @@
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(476, 131);
+            this.btnEliminar.Location = new System.Drawing.Point(432, 126);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(283, 47);
             this.btnEliminar.TabIndex = 27;
@@ -91,7 +91,7 @@
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(84, 131);
+            this.btnGuardar.Location = new System.Drawing.Point(184, 131);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(205, 37);
             this.btnGuardar.TabIndex = 25;
@@ -122,7 +122,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(93, 10);
+            this.label1.Location = new System.Drawing.Point(92, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 26);
             this.label1.TabIndex = 22;
@@ -160,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(1101, 450);
             this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.btnEliminar);
