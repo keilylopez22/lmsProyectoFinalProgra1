@@ -49,7 +49,7 @@
             this.dgvAsignacion.AllowUserToAddRows = false;
             this.dgvAsignacion.AllowUserToDeleteRows = false;
             this.dgvAsignacion.AllowUserToOrderColumns = true;
-            this.dgvAsignacion.BackgroundColor = System.Drawing.Color.HotPink;
+            this.dgvAsignacion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvAsignacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAsignacion.Location = new System.Drawing.Point(98, 255);
             this.dgvAsignacion.Name = "dgvAsignacion";
@@ -111,11 +111,11 @@
             // 
             // cmbProfesor
             // 
-            this.cmbProfesor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbProfesor.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProfesor.FormattingEnabled = true;
             this.cmbProfesor.Location = new System.Drawing.Point(476, 42);
             this.cmbProfesor.Name = "cmbProfesor";
-            this.cmbProfesor.Size = new System.Drawing.Size(329, 28);
+            this.cmbProfesor.Size = new System.Drawing.Size(329, 30);
             this.cmbProfesor.TabIndex = 23;
             // 
             // label1
@@ -130,11 +130,11 @@
             // 
             // cmbCursos
             // 
-            this.cmbCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCursos.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCursos.FormattingEnabled = true;
             this.cmbCursos.Location = new System.Drawing.Point(97, 42);
             this.cmbCursos.Name = "cmbCursos";
-            this.cmbCursos.Size = new System.Drawing.Size(322, 28);
+            this.cmbCursos.Size = new System.Drawing.Size(322, 30);
             this.cmbCursos.TabIndex = 21;
             // 
             // pnllogo
@@ -160,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepPink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1101, 450);
             this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.btnEliminar);

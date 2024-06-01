@@ -41,10 +41,7 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.cmbRol = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbFoto = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvUsuarios
@@ -52,7 +49,7 @@
             this.dgvUsuarios.AllowUserToAddRows = false;
             this.dgvUsuarios.AllowUserToDeleteRows = false;
             this.dgvUsuarios.AllowUserToOrderColumns = true;
-            this.dgvUsuarios.BackgroundColor = System.Drawing.Color.HotPink;
+            this.dgvUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsuarios.Location = new System.Drawing.Point(12, 242);
             this.dgvUsuarios.Name = "dgvUsuarios";
@@ -178,31 +175,12 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lbFoto);
-            this.panel1.Location = new System.Drawing.Point(949, 38);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 222);
-            this.panel1.TabIndex = 23;
-            // 
-            // lbFoto
-            // 
-            this.lbFoto.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoto.Location = new System.Drawing.Point(36, 71);
-            this.lbFoto.Name = "lbFoto";
-            this.lbFoto.Size = new System.Drawing.Size(155, 91);
-            this.lbFoto.TabIndex = 38;
-            this.lbFoto.Text = "Foto no disponible";
-            this.lbFoto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FRMUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepPink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1474, 501);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.cmbRol);
             this.Controls.Add(this.btnCancelar);
@@ -220,7 +198,6 @@
             this.Text = "FRMUsuarios";
             this.Load += new System.EventHandler(this.FRMUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,7 +217,5 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.ComboBox cmbRol;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lbFoto;
     }
 }

@@ -154,5 +154,10 @@ namespace lmsProyectoFinal
             FRMGrupos form = new FRMGrupos();
             mostrarForm(form);
         }
+
+        private void pnlContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

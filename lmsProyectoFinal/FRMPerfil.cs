@@ -23,15 +23,33 @@ namespace lmsProyectoFinal
 
         private void FRMPerfil_Load(object sender, EventArgs e)
         {
-            usuario = Sesion.getInstance().Usuario;
-            txtnombre.Text = usuario.Nombre;
-            txtEmail.Text = usuario.Email;
-            txtRol.Text = usuario.Rol;
-            txtContrasena.Text = usuario.Contrasenia;
+            try
+            {
+                usuario = Sesion.getInstance().Usuario;
+                txtnombre.Text = usuario.Nombre;
+                txtEmail.Text = usuario.Email;
+                txtRol.Text = usuario.Rol;
+                txtContrasena.Text = usuario.Contrasenia;
 
-            MemoryStream ms = new MemoryStream(usuario.Imagen);
-            Bitmap bm = new Bitmap(ms);
-            pcbImagen.Image = bm;
+                if (usuario.Imagen != null && usuario.Imagen.Length > 0)
+                {
+                    using (MemoryStream ms = new MemoryStream(usuario.Imagen))
+                    {
+                        Bitmap bm = new Bitmap(ms);
+                        pcbImagen.Image = bm;
+                    }
+                }
+                else
+                {
+                    // Set a default image if user image is null or empty
+                    pcbImagen.Image = null; // or set a default image
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading user image: " + ex.Message);
+            }
+
         }
 
         private void btnSeleccionar_Click(object sender, EventArgs e)
@@ -51,12 +69,26 @@ namespace lmsProyectoFinal
         private void btnGuardar_Click(object sender, EventArgs e)
         {
 
-            MemoryStream ms = new MemoryStream();
-            pcbImagen.Image.Save(ms, ImageFormat.Jpeg);
-            byte[] abyte = ms.ToArray();
-            usuario.Imagen = abyte;
-            usuarioDAO.UpdateUsuario(usuario);
-            MessageBox.Show("Usuario guardado");
+            try
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    pcbImagen.Image.Save(ms, ImageFormat.Jpeg);
+                    byte[] abyte = ms.ToArray();
+                    usuario.Imagen = abyte;
+                }
+                usuarioDAO.UpdateUsuario(usuario);
+                MessageBox.Show("Usuario guardado");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saving user data: " + ex.Message);
+            }
+
+        }
+
+        private void pcbImagen_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -135,16 +135,7 @@ namespace lmsProyectoFinal
         }
         private void CargaFoto()
         {
-            try
-            {
-                lbFoto.Visible = false;
-                //pctbxFoto.Image = Image.FromFile();
-            }
-            catch
-            {
-                pctbxFoto.Image =null;
-                lbFoto.Visible = true;
-            }
+           
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
@@ -159,6 +150,11 @@ namespace lmsProyectoFinal
             }
             listarEstudiantes();
             limpiarCampos();
+        }
+
+        private void pnlInputs_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

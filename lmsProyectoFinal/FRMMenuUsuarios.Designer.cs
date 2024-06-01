@@ -54,6 +54,10 @@
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlMenu.SuspendLayout();
             this.pnlInformes.SuspendLayout();
             this.pnlSubMenuCursos.SuspendLayout();
@@ -62,11 +66,15 @@
             this.pnlSubMenuUsuarios.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlContenedor.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.HotPink;
+            this.pnlMenu.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pnlMenu.Controls.Add(this.pnlInformes);
             this.pnlMenu.Controls.Add(this.btnInformes);
             this.pnlMenu.Controls.Add(this.pnlSubMenuCursos);
@@ -86,7 +94,7 @@
             // 
             // pnlInformes
             // 
-            this.pnlInformes.BackColor = System.Drawing.Color.HotPink;
+            this.pnlInformes.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pnlInformes.Controls.Add(this.btnCalificaciones);
             this.pnlInformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlInformes.Location = new System.Drawing.Point(0, 791);
@@ -112,7 +120,7 @@
             // 
             // btnInformes
             // 
-            this.btnInformes.BackColor = System.Drawing.Color.DeepPink;
+            this.btnInformes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnInformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInformes.FlatAppearance.BorderSize = 0;
             this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -140,7 +148,7 @@
             // 
             // btnForos
             // 
-            this.btnForos.BackColor = System.Drawing.Color.HotPink;
+            this.btnForos.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.btnForos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnForos.FlatAppearance.BorderSize = 0;
             this.btnForos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -157,7 +165,7 @@
             // 
             // btnActividades
             // 
-            this.btnActividades.BackColor = System.Drawing.Color.HotPink;
+            this.btnActividades.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.btnActividades.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnActividades.FlatAppearance.BorderSize = 0;
             this.btnActividades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -174,7 +182,7 @@
             // 
             // btnListarCursos
             // 
-            this.btnListarCursos.BackColor = System.Drawing.Color.HotPink;
+            this.btnListarCursos.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.btnListarCursos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnListarCursos.FlatAppearance.BorderSize = 0;
             this.btnListarCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -191,7 +199,7 @@
             // 
             // btnCursos
             // 
-            this.btnCursos.BackColor = System.Drawing.Color.DeepPink;
+            this.btnCursos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnCursos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCursos.FlatAppearance.BorderSize = 0;
             this.btnCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -208,7 +216,7 @@
             // 
             // pnlSubMenuProfesores
             // 
-            this.pnlSubMenuProfesores.BackColor = System.Drawing.Color.HotPink;
+            this.pnlSubMenuProfesores.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pnlSubMenuProfesores.Controls.Add(this.btnAsigProfesor);
             this.pnlSubMenuProfesores.Controls.Add(this.btnListarProfesores);
             this.pnlSubMenuProfesores.Dock = System.Windows.Forms.DockStyle.Top;
@@ -251,7 +259,7 @@
             // 
             // btnProfesores
             // 
-            this.btnProfesores.BackColor = System.Drawing.Color.DeepPink;
+            this.btnProfesores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnProfesores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProfesores.FlatAppearance.BorderSize = 0;
             this.btnProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -268,7 +276,7 @@
             // 
             // pnlSubMenuEstudiantes
             // 
-            this.pnlSubMenuEstudiantes.BackColor = System.Drawing.Color.HotPink;
+            this.pnlSubMenuEstudiantes.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pnlSubMenuEstudiantes.Controls.Add(this.btnAsignacion);
             this.pnlSubMenuEstudiantes.Controls.Add(this.btnListarEstudiantes);
             this.pnlSubMenuEstudiantes.Dock = System.Windows.Forms.DockStyle.Top;
@@ -311,7 +319,7 @@
             // 
             // btnEstudiantes
             // 
-            this.btnEstudiantes.BackColor = System.Drawing.Color.DeepPink;
+            this.btnEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnEstudiantes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEstudiantes.FlatAppearance.BorderSize = 0;
             this.btnEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -328,7 +336,7 @@
             // 
             // pnlSubMenuUsuarios
             // 
-            this.pnlSubMenuUsuarios.BackColor = System.Drawing.Color.HotPink;
+            this.pnlSubMenuUsuarios.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pnlSubMenuUsuarios.Controls.Add(this.btnListarUsuarios);
             this.pnlSubMenuUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSubMenuUsuarios.Location = new System.Drawing.Point(0, 191);
@@ -354,7 +362,7 @@
             // 
             // btnUsuarios
             // 
-            this.btnUsuarios.BackColor = System.Drawing.Color.DeepPink;
+            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUsuarios.FlatAppearance.BorderSize = 0;
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -380,7 +388,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.HotPink;
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::lmsProyectoFinal.Properties.Resources.K_icon;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -392,18 +400,62 @@
             // 
             // pnlContenedor
             // 
-            this.pnlContenedor.BackColor = System.Drawing.Color.DeepPink;
+            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.pnlContenedor.Controls.Add(this.panel1);
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(265, 0);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(656, 927);
+            this.pnlContenedor.Size = new System.Drawing.Size(903, 927);
             this.pnlContenedor.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(903, 141);
+            this.panel1.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(775, 53);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkGray;
+            this.label1.Location = new System.Drawing.Point(679, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 26);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Wixman";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 53);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(103, 88);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // FRMMenuUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 927);
+            this.ClientSize = new System.Drawing.Size(1168, 927);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -417,6 +469,11 @@
             this.pnlSubMenuUsuarios.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlContenedor.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -447,5 +504,9 @@
         private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlContenedor;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

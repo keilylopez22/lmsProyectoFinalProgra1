@@ -48,6 +48,7 @@
             this.dgvGrupos.AllowUserToAddRows = false;
             this.dgvGrupos.AllowUserToDeleteRows = false;
             this.dgvGrupos.AllowUserToOrderColumns = true;
+            this.dgvGrupos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvGrupos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGrupos.Location = new System.Drawing.Point(37, 152);
             this.dgvGrupos.Name = "dgvGrupos";
@@ -60,33 +61,37 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(37, 124);
+            this.txtNombre.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(37, 116);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(272, 22);
+            this.txtNombre.Size = new System.Drawing.Size(272, 28);
             this.txtNombre.TabIndex = 2;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(332, 124);
+            this.txtDescripcion.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(332, 116);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(424, 22);
+            this.txtDescripcion.Size = new System.Drawing.Size(424, 28);
             this.txtDescripcion.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 94);
+            this.label1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 16);
+            this.label1.Size = new System.Drawing.Size(92, 26);
             this.label1.TabIndex = 4;
             this.label1.Text = "Nombre";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(340, 94);
+            this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(327, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 16);
+            this.label2.Size = new System.Drawing.Size(133, 26);
             this.label2.TabIndex = 5;
             this.label2.Text = "Descripcion:";
             // 
@@ -94,9 +99,10 @@
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(830, 123);
+            this.button1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(801, 105);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(135, 41);
             this.button1.TabIndex = 6;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
@@ -106,6 +112,7 @@
             // 
             this.dgvEstudiantes.AllowUserToAddRows = false;
             this.dgvEstudiantes.AllowUserToDeleteRows = false;
+            this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEstudiantes.Location = new System.Drawing.Point(37, 374);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
@@ -118,27 +125,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 316);
+            this.label3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(32, 315);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 16);
+            this.label3.Size = new System.Drawing.Size(122, 26);
             this.label3.TabIndex = 9;
             this.label3.Text = "Estudiante";
             // 
             // cmbEstudiantes
             // 
+            this.cmbEstudiantes.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEstudiantes.FormattingEnabled = true;
             this.cmbEstudiantes.Location = new System.Drawing.Point(37, 344);
             this.cmbEstudiantes.Name = "cmbEstudiantes";
-            this.cmbEstudiantes.Size = new System.Drawing.Size(258, 24);
+            this.cmbEstudiantes.Size = new System.Drawing.Size(258, 25);
             this.cmbEstudiantes.TabIndex = 10;
             // 
             // btnAgregar
             // 
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Location = new System.Drawing.Point(332, 344);
+            this.btnAgregar.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(301, 330);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(100, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(131, 38);
             this.btnAgregar.TabIndex = 11;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -148,9 +158,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepPink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(948, 534);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cmbEstudiantes);
             this.Controls.Add(this.label3);
@@ -161,6 +170,7 @@
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.dgvGrupos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRMGrupos";
             this.Text = "FRMGrupos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrupos)).EndInit();

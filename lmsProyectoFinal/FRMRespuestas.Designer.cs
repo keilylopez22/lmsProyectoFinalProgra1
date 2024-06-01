@@ -64,7 +64,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.BackColor = System.Drawing.Color.Plum;
+            this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtDescripcion.Enabled = false;
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(44, 113);
@@ -109,7 +109,7 @@
             this.dgvRespuestas.AllowUserToAddRows = false;
             this.dgvRespuestas.AllowUserToDeleteRows = false;
             this.dgvRespuestas.AllowUserToOrderColumns = true;
-            this.dgvRespuestas.BackgroundColor = System.Drawing.Color.HotPink;
+            this.dgvRespuestas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvRespuestas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRespuestas.Location = new System.Drawing.Point(44, 406);
             this.dgvRespuestas.Name = "dgvRespuestas";
@@ -121,7 +121,7 @@
             // 
             // txtContenido
             // 
-            this.txtContenido.BackColor = System.Drawing.Color.Plum;
+            this.txtContenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtContenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContenido.Location = new System.Drawing.Point(44, 265);
             this.txtContenido.Multiline = true;
@@ -156,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepPink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(997, 568);
             this.Controls.Add(this.btnResponder);
             this.Controls.Add(this.txtContenido);

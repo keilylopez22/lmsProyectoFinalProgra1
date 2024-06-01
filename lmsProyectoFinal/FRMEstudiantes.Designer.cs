@@ -43,11 +43,8 @@
             this.cmbSexo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dtPckInscripcion = new System.Windows.Forms.DateTimePicker();
-            this.pctbxFoto = new System.Windows.Forms.PictureBox();
-            this.lbFoto = new System.Windows.Forms.Label();
             this.pnlInputs = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctbxFoto)).BeginInit();
             this.pnlInputs.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +53,7 @@
             this.dgvEstudiantes.AllowUserToAddRows = false;
             this.dgvEstudiantes.AllowUserToDeleteRows = false;
             this.dgvEstudiantes.AllowUserToOrderColumns = true;
-            this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.HotPink;
+            this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEstudiantes.Location = new System.Drawing.Point(64, 290);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
@@ -201,29 +198,8 @@
             this.dtPckInscripcion.Size = new System.Drawing.Size(336, 28);
             this.dtPckInscripcion.TabIndex = 35;
             // 
-            // pctbxFoto
-            // 
-            this.pctbxFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pctbxFoto.Location = new System.Drawing.Point(876, 22);
-            this.pctbxFoto.Name = "pctbxFoto";
-            this.pctbxFoto.Size = new System.Drawing.Size(179, 170);
-            this.pctbxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctbxFoto.TabIndex = 36;
-            this.pctbxFoto.TabStop = false;
-            // 
-            // lbFoto
-            // 
-            this.lbFoto.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoto.Location = new System.Drawing.Point(880, 56);
-            this.lbFoto.Name = "lbFoto";
-            this.lbFoto.Size = new System.Drawing.Size(155, 91);
-            this.lbFoto.TabIndex = 37;
-            this.lbFoto.Text = "Foto no disponible";
-            this.lbFoto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pnlInputs
             // 
-            this.pnlInputs.BackColor = System.Drawing.Color.DeepPink;
             this.pnlInputs.Controls.Add(this.btnCancelar);
             this.pnlInputs.Controls.Add(this.btnEliminar);
             this.pnlInputs.Controls.Add(this.btnGuardar);
@@ -233,15 +209,14 @@
             this.pnlInputs.Name = "pnlInputs";
             this.pnlInputs.Size = new System.Drawing.Size(1256, 259);
             this.pnlInputs.TabIndex = 36;
+            this.pnlInputs.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlInputs_Paint);
             // 
             // FRMEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepPink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1256, 480);
-            this.Controls.Add(this.lbFoto);
-            this.Controls.Add(this.pctbxFoto);
             this.Controls.Add(this.dtPckInscripcion);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbSexo);
@@ -258,7 +233,6 @@
             this.Text = "FRMEstudiantes";
             this.Load += new System.EventHandler(this.FRMEstudiantes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctbxFoto)).EndInit();
             this.pnlInputs.ResumeLayout(false);
             this.pnlInputs.PerformLayout();
             this.ResumeLayout(false);
@@ -282,8 +256,6 @@
         private System.Windows.Forms.ComboBox cmbSexo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtPckInscripcion;
-        private System.Windows.Forms.PictureBox pctbxFoto;
-        private System.Windows.Forms.Label lbFoto;
         private System.Windows.Forms.Panel pnlInputs;
     }
 }

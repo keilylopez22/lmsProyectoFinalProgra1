@@ -57,7 +57,7 @@
             this.dgvCalificaciones.AllowUserToAddRows = false;
             this.dgvCalificaciones.AllowUserToDeleteRows = false;
             this.dgvCalificaciones.AllowUserToOrderColumns = true;
-            this.dgvCalificaciones.BackgroundColor = System.Drawing.Color.HotPink;
+            this.dgvCalificaciones.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvCalificaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCalificaciones.Location = new System.Drawing.Point(38, 272);
             this.dgvCalificaciones.Name = "dgvCalificaciones";
@@ -211,7 +211,7 @@
             // numNota
             // 
             this.numNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNota.ForeColor = System.Drawing.Color.DeepPink;
+            this.numNota.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.numNota.Location = new System.Drawing.Point(841, 33);
             this.numNota.Name = "numNota";
             this.numNota.Size = new System.Drawing.Size(159, 74);
@@ -240,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepPink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1351, 450);
             this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.numNota);

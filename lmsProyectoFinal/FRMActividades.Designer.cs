@@ -52,7 +52,7 @@
             this.dgvActividades.AllowUserToAddRows = false;
             this.dgvActividades.AllowUserToDeleteRows = false;
             this.dgvActividades.AllowUserToOrderColumns = true;
-            this.dgvActividades.BackgroundColor = System.Drawing.Color.HotPink;
+            this.dgvActividades.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvActividades.Location = new System.Drawing.Point(50, 337);
             this.dgvActividades.Name = "dgvActividades";
@@ -65,11 +65,11 @@
             // 
             // cmbCursos
             // 
-            this.cmbCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCursos.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCursos.FormattingEnabled = true;
             this.cmbCursos.Location = new System.Drawing.Point(444, 36);
             this.cmbCursos.Name = "cmbCursos";
-            this.cmbCursos.Size = new System.Drawing.Size(192, 28);
+            this.cmbCursos.Size = new System.Drawing.Size(192, 30);
             this.cmbCursos.TabIndex = 1;
             // 
             // label1
@@ -84,10 +84,10 @@
             // 
             // txtTitulo
             // 
-            this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitulo.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitulo.Location = new System.Drawing.Point(50, 38);
             this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(366, 26);
+            this.txtTitulo.Size = new System.Drawing.Size(366, 35);
             this.txtTitulo.TabIndex = 3;
             // 
             // label2
@@ -112,7 +112,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.BackColor = System.Drawing.Color.HotPink;
+            this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtDescripcion.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(50, 171);
             this.txtDescripcion.Multiline = true;
@@ -188,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepPink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1089, 510);
             this.Controls.Add(this.pnllogo);
             this.Controls.Add(this.label3);

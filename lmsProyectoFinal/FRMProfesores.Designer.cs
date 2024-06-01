@@ -53,7 +53,7 @@
             this.dgvProfesores.AllowUserToAddRows = false;
             this.dgvProfesores.AllowUserToDeleteRows = false;
             this.dgvProfesores.AllowUserToOrderColumns = true;
-            this.dgvProfesores.BackgroundColor = System.Drawing.Color.DeepPink;
+            this.dgvProfesores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvProfesores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProfesores.GridColor = System.Drawing.Color.DeepPink;
             this.dgvProfesores.Location = new System.Drawing.Point(57, 277);
@@ -201,7 +201,7 @@
             // 
             // pnlInputs
             // 
-            this.pnlInputs.BackColor = System.Drawing.Color.DeepPink;
+            this.pnlInputs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.pnlInputs.Controls.Add(this.dtPckInscripcion);
             this.pnlInputs.Controls.Add(this.label5);
             this.pnlInputs.Controls.Add(this.cmbSexo);
@@ -225,7 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.HotPink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1001, 450);
             this.Controls.Add(this.pnlInputs);
             this.Controls.Add(this.dgvProfesores);
